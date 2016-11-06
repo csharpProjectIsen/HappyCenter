@@ -6,29 +6,47 @@
         xmlns:local="clr-namespace:HappyCenter.View"
         mc:Ignorable="d"
         Name="Accueil"
-        Title="VoirAccueil" Height="300" Width="300">
+        Title="VoirAccueil" Height="460" Width="800">
     <Grid Background="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}">
-        <Label x:Name="label" Content="BIENVENUE CHEZ HAPPY CENTER" HorizontalAlignment="Left" Margin="34,4,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.078,-2.707" FontFamily="Segoe Print"/>
+        <Label x:Name="label" Content="BIENVENUE CHEZ HAPPY CENTER" HorizontalAlignment="Left" Margin="296,9,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.078,-2.707" FontFamily="Segoe Print"/>
 
         <DataGrid AutoGenerateColumns="False" 
-          Height="149" 
+          Height="255" 
           HorizontalAlignment="Right" 
           Name="planning" 
           VerticalAlignment="Top" 
-          Width="180" Margin="0,39,4.6,0" SelectionChanged="planning_SelectionChanged">
+          Width="548" Margin="0,39,9.6,0" SelectionChanged="planning_SelectionChanged">
             <DataGrid.Columns >
-                <DataGridTextColumn Binding="{Binding Path=A}" MinWidth="50" />
-                <DataGridTextColumn Binding="{Binding Path=B}" MinWidth="50" />
-                <DataGridTextColumn Binding="{Binding Path=C}" MinWidth="50" />
-                <DataGridTextColumn Binding="{Binding Path=D}" MinWidth="50" />
-                <DataGridTextColumn Binding="{Binding Path=E}" MinWidth="50" />
-                <DataGridTextColumn Binding="{Binding Path=F}" MinWidth="50" />
+                <DataGridTextColumn Binding="{Binding Path=A}" MinWidth="90" />
+                <DataGridTextColumn Binding="{Binding Path=B}" MinWidth="90" />
+                <DataGridTextColumn Binding="{Binding Path=C}" MinWidth="90" />
+                <DataGridTextColumn Binding="{Binding Path=D}" MinWidth="90" />
+                <DataGridTextColumn Binding="{Binding Path=E}" MinWidth="90" />
+                <DataGridTextColumn Binding="{Binding Path=F}" MinWidth="90" />
             </DataGrid.Columns>
         </DataGrid>
-        <Rectangle HorizontalAlignment="Left" Height="149" Margin="4,39,0,0" VerticalAlignment="Top" Width="100" Fill="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
-        <Label Name="ListeActivites" Content="Liste des activités" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="14,44,0,0" FontFamily="Arial" Height="18" Width="77" FontSize="8"/>
-           
-        
+        <Rectangle HorizontalAlignment="Left" Height="381" Margin="4,39,0,0" VerticalAlignment="Top" Width="190" Fill="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}"/>
+        <Label Name="ListeActivites" Content="Liste des activités" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="58,50,0,0" FontFamily="Arial" Height="18" Width="77" FontSize="8"/>
+        <Image x:Name="img_cuisine" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="45" Stretch="Fill" Source="/ressources/cuisine.png" Margin="10,82,0,0"/>
+        <Label x:Name="atelierCuisine" Content="Atelier Cuisine" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="58,102,0,0" Width="72" FontFamily="Arial" FontSize="9" Height="20"/>
+        <Button x:Name="btn_cuisine_inscrit" Content="S'inscrire" HorizontalAlignment="Left" Margin="140,86,0,0" VerticalAlignment="Top" Width="50" Height="23" Click="button_Click" Background="#FF54C242"/>
+        <Image x:Name="img_arts" HorizontalAlignment="Left" Height="33" Margin="10,148,0,0" VerticalAlignment="Top" Width="32" Source="/ressources/arts.png"/>
+        <Label x:Name="atelierArts" Content="Atelier Arts" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="58,168,0,0" FontSize="9" Width="58" FontFamily="Arial" Height="20"/>
+        <Button x:Name="btn_arts_inscrit" Content="S'inscrire" HorizontalAlignment="Left" Margin="140,152,0,0" VerticalAlignment="Top" Width="50" Height="23" Click="button_Click" Background="#FF54C242"/>
+        <Image x:Name="img_foot" HorizontalAlignment="Left" Height="30" Margin="10,212,0,0" VerticalAlignment="Top" Width="32" Source="/ressources/foot.png"/>
+        <Label x:Name="atelierFoot" Content="Atelier Foot" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="58,222,0,0" FontSize="9" Width="58" FontFamily="Arial" Height="20" RenderTransformOrigin="0.497,2.7"/>
+        <Button x:Name="btn_foot_inscrit" Content="S'inscrire" HorizontalAlignment="Left" Margin="140,206,0,0" VerticalAlignment="Top" Width="50" Height="23" Click="button_Click" Background="#FF54C242"/>
+        <Image x:Name="img_jeuxsociete" HorizontalAlignment="Left" Height="30" Margin="10,262,0,0" VerticalAlignment="Top" Width="37" Source="/ressources/jeuxSociete.png"/>
+        <Label x:Name="atelierJeuxS" Content="Atelier Jeux de &#xD;&#xA;Société" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="58,279,0,0" FontSize="9" Width="72" FontFamily="Arial" Height="30" RenderTransformOrigin="0.497,2.7"/>
+        <Button x:Name="btn_jeuxS_inscrit" Content="S'inscrire" HorizontalAlignment="Left" Margin="140,269,0,0" VerticalAlignment="Top" Width="50" Height="23" Click="button_Click" Background="#FF54C242"/>
+        <Image x:Name="img_fitness" HorizontalAlignment="Left" Height="30" Margin="10,315,0,0" VerticalAlignment="Top" Width="32" Source="/ressources/fitness.png"/>
+        <Label x:Name="atelierFitness" Content="Atelier Fitness" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="58,332,0,0" FontSize="9" Width="72" FontFamily="Arial" Height="20" RenderTransformOrigin="0.497,2.7"/>
+        <Button x:Name="btn_jeuxS_inscrit_Copy" Content="S'inscrire" HorizontalAlignment="Left" Margin="140,322,0,0" VerticalAlignment="Top" Width="50" Height="23" Click="button_Click" Background="#FF54C242"/>
+        <Image x:Name="img_espagnol" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="37" Margin="5,371,0,0" Source="/ressources/esp.png"/>
+        <Label x:Name="atelierEspagnol" Content="Atelier Espagnol" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="58,394,0,0" FontSize="9" Width="77" FontFamily="Arial" Height="20" RenderTransformOrigin="0.497,2.7"/>
+        <Button x:Name="btn_espagnol" Content="S'inscrire" HorizontalAlignment="Left" Margin="140,378,0,0" VerticalAlignment="Top" Width="50" Height="23" Click="button_Click" Background="#FF54C242"/>
+
+
     </Grid>
 
 </Window>

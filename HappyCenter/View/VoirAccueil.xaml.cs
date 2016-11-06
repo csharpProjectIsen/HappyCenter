@@ -36,10 +36,10 @@ namespace HappyCenter.View
             //code tableau planning
             var list = new ObservableCollection<DataObject>();
             list.Add(new DataObject() { A = "", B = "MARDI", C = "MERCREDI", D ="JEUDI", E = "VENDREDI", F = "SAMEDI"  });
-            list.Add(new DataObject() { A = "8h - 10 h", B = " ", C = " ", D = " ", E = " ", F = " " });
-            list.Add(new DataObject() { A = "10h - 12 h", B = " ", C = " ", D = " ", E = " ", F = " " });
-            list.Add(new DataObject() { A = "14h - 16 h", B = " ", C = " ", D = " ", E = " ", F = " " });
-            list.Add(new DataObject() { A = "16h - 18 h", B = " ", C = " ", D = " ", E = " ", F = " " });
+            list.Add(new DataObject() { A = "\n"+"8h - 10 h", B = "Cuisine\n" +"Jean H", C = " ", D = " ", E = " ", F = "Jeu de\n"+"société\n"+"Hélène F" });
+            list.Add(new DataObject() { A = "\n"+"10h - 12 h", B = " ", C = "Arts\n\n"+"Claude M", D = "Espagnol\n\n"+"Mario B", E = "Basket\n\n"+"Pierre L", F = "Fitness\n\n"+"Laura A" });
+            list.Add(new DataObject() { A = "\n" + "14h - 16 h", B = "Jeu de\n"+"société\n"+"Hélène F", C = "Fitness\n"+"Laura A", D = " ", E = "Arts\n"+"Claude M", F = " " });
+            list.Add(new DataObject() { A = "\n" + "16h - 18 h", B = " ", C = " ", D = "Foot\n\n"+"Mathieu D", E = " ", F = " " });
             this.planning.ItemsSource = list;
 
             //code images activités
@@ -59,6 +59,11 @@ namespace HappyCenter.View
         {
             // ... Create a new BitmapImage.
             
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

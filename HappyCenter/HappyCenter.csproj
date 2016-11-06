@@ -134,7 +134,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Ressources\arts.PNG" />
-    <Resource Include="Ressources\basket.PNG" />
     <Resource Include="Ressources\esp.PNG" />
     <Resource Include="Ressources\fitness.PNG" />
     <Resource Include="Ressources\jeuxSociete.PNG" />
