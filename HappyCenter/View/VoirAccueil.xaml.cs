@@ -10,21 +10,23 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace HappyCenter
+namespace HappyCenter.View
 {
     /// <summary>
-    /// Logique d'interaction pour MainWindow.xaml
+    /// Logique d'interaction pour VoirAccueil.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class VoirAccueil : Window
     {
-        public MainWindow()
+        public VoirAccueil()
         {
-            HappyCenter.View.VoirAccueil va = new View.VoirAccueil();
             InitializeComponent();
-            va.Show();
+        }
+
+        private void listView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }
