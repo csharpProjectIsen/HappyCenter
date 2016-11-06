@@ -129,6 +129,20 @@
   <ItemGroup>
     <Folder Include="ViewModel\" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ressources\cuisine.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ressources\arts.PNG" />
+    <Resource Include="Ressources\basket.PNG" />
+    <Resource Include="Ressources\esp.PNG" />
+    <Resource Include="Ressources\fitness.PNG" />
+    <Resource Include="Ressources\jeuxSociete.PNG" />
+    <Resource Include="Ressources\utilisateur.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ressources\foot.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

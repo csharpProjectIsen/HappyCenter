@@ -5,7 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HappyCenter.View"
         mc:Ignorable="d"
-        Title="VoirAccueil" Height="300" Width="300" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">
-    <Label x:Name="bienvenue" Content="BIENVENUE CHEZ HAPPY CENTER " HorizontalAlignment="Left" VerticalAlignment="Top" FontStyle="Italic" FontFamily="Segoe Print" Margin="21,5,0,0"/>
+        Name="Accueil"
+        Title="VoirAccueil" Height="300" Width="300">
+    <Grid Background="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}">
+        <Label x:Name="label" Content="BIENVENUE CHEZ HAPPY CENTER" HorizontalAlignment="Left" Margin="34,4,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.078,-2.707" FontFamily="Segoe Print"/>
+
+        <DataGrid AutoGenerateColumns="False" 
+          Height="149" 
+          HorizontalAlignment="Right" 
+          Name="planning" 
+          VerticalAlignment="Top" 
+          Width="180" Margin="0,39,4.6,0" SelectionChanged="planning_SelectionChanged">
+            <DataGrid.Columns >
+                <DataGridTextColumn Binding="{Binding Path=A}" MinWidth="50" />
+                <DataGridTextColumn Binding="{Binding Path=B}" MinWidth="50" />
+                <DataGridTextColumn Binding="{Binding Path=C}" MinWidth="50" />
+                <DataGridTextColumn Binding="{Binding Path=D}" MinWidth="50" />
+                <DataGridTextColumn Binding="{Binding Path=E}" MinWidth="50" />
+                <DataGridTextColumn Binding="{Binding Path=F}" MinWidth="50" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Rectangle HorizontalAlignment="Left" Height="149" Margin="4,39,0,0" VerticalAlignment="Top" Width="100" Fill="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+        <Label Name="ListeActivites" Content="Liste des activités" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="14,44,0,0" FontFamily="Arial" Height="18" Width="77" FontSize="8"/>
+           
+        
+    </Grid>
 
 </Window>
