@@ -5,8 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HappyCenter.View"
         mc:Ignorable="d"
-        Title="VoirPersonne" Height="300" Width="300">
-    <Grid>
-        
+        Title="VoirPersonne" Height="400" Width="400">
+    <Grid Background="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}" Margin="-135,0,-55,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="139*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="352*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="label" Content="   &#x9;&#x9;     BIENVENUE CHEZ HAPPY CENTER" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Width="452" Height="29" FontFamily="Segoe Print"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="154" Margin="10,51,0,0" Stroke="Black" VerticalAlignment="Top" Width="124"/>
+        <Label x:Name="label1" Content="Informations personnelles :&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top" Width="124" FontFamily="Arial" FontStyle="Italic" FontSize="9" Height="24"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="18" Margin="17,60,0,0" VerticalAlignment="Top" Width="26"/>
+        <Label x:Name="label2" Content="Nom :" HorizontalAlignment="Left" Margin="17,102,0,0" VerticalAlignment="Top" Width="35" Height="22" FontFamily="Arial" FontSize="9"/>
+        <Label x:Name="label2_Copy" Content="Nom :" HorizontalAlignment="Left" Margin="17,102,0,0" VerticalAlignment="Top" Width="35" Height="22" FontFamily="Arial" FontSize="9"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="17" Margin="63,102,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="61" FontSize="9"/>
+        <Label x:Name="label3" Content="Prénom :&#xD;&#xA;" HorizontalAlignment="Left" Margin="17,124,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="9" Width="45" Height="19"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="19" Margin="63,124,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="61" FontSize="9"/>
+        <Label x:Name="label4" Content="Age :" HorizontalAlignment="Left" Margin="17,148,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="9" Width="35" Height="23"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="16" Margin="63,148,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="61" FontSize="9" FontFamily="Arial"/>
+        <Button x:Name="button" Content="Valider" HorizontalAlignment="Left" Margin="17,182,0,0" VerticalAlignment="Top" Width="35" FontSize="9" FontFamily="Arial" Background="#FF54C242" Height="14"/>
+        <Button x:Name="button1" Content="Modifier" HorizontalAlignment="Left" Margin="85,182,0,0" VerticalAlignment="Top" Width="39" FontSize="9" FontFamily="Arial" Background="Yellow" Height="14"/>
+        <Button x:Name="button2" Content="Accueil" HorizontalAlignment="Left" Margin="10,216,0,0" VerticalAlignment="Top" Width="42" Click="button2_Click" FontSize="9" FontFamily="Arial" Height="14"/>
+        <Button x:Name="button3" Content="Désinscription" HorizontalAlignment="Left" Margin="68,216,0,0" VerticalAlignment="Top" Width="66" FontSize="9" FontFamily="Arial" Height="14"/>
+        <Button x:Name="button4" Content="Chat" HorizontalAlignment="Left" Margin="10,242,0,0" VerticalAlignment="Top" Width="42" Height="17" FontFamily="Arial" FontSize="9"/>
+
     </Grid>
 </Window>

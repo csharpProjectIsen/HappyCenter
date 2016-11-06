@@ -21,7 +21,15 @@ namespace HappyCenter.View
     {
         public VoirPersonne()
         {
+           // HappyCenter.View.VoirPersonne vp = new View.VoirPersonne();
             InitializeComponent();
+           // vp.Show();
+           
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

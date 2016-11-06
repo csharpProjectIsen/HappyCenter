@@ -22,7 +22,10 @@ namespace HappyCenter
     {
         public MainWindow()
         {
+            HappyCenter.View.VoirPersonne vp = new View.VoirPersonne();
             InitializeComponent();
+            vp.Show();
+
         }
     }
 }
