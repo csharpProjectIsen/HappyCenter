@@ -58,6 +58,9 @@ namespace HappyCenter.View
         private void Image_Loaded(object sender, RoutedEventArgs e)
         {
             // ... Create a new BitmapImage.
+
+            Activites a;
+           
             
         }
 

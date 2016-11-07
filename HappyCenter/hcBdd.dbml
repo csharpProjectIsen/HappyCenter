@@ -1,13 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="happyCenterBdd" Class="hcBddDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
   <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\happyCenterBdd.mdf;Integrated Security=True" SettingsObjectName="HappyCenter.Properties.Settings" SettingsPropertyName="happyCenterBddConnectionString" Provider="System.Data.SqlClient" />
-  <Table Name="dbo.Moniteurs" Member="Moniteurs">
-    <Type Name="Moniteurs">
-      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Nom" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="Prenom" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="Activite" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-    </Type>
-  </Table>
   <Table Name="dbo.Activites" Member="Activites">
     <Type Name="Activites">
       <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -17,6 +9,19 @@
       <Column Name="Age_Min" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Age_Max" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Photo" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Id_Moniteur" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Id_Personne" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Activites_Personnes" Member="Personnes1" ThisKey="Id" OtherKey="Id_Activite" Type="Personnes" />
+      <Association Name="Moniteurs_Activites" Member="Moniteurs" ThisKey="Id_Moniteur" OtherKey="Id" Type="Moniteurs" IsForeignKey="true" />
+      <Association Name="Personnes_Activites" Member="Personnes" ThisKey="Id_Personne" OtherKey="Id" Type="Personnes" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Moniteurs" Member="Moniteurs">
+    <Type Name="Moniteurs">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nom" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Prenom" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Moniteurs_Activites" Member="Activites" ThisKey="Id" OtherKey="Id_Moniteur" Type="Activites" />
     </Type>
   </Table>
   <Table Name="dbo.Personnes" Member="Personnes">
@@ -25,6 +30,9 @@
       <Column Name="Nom" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="Prenom" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="Age" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Activite" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Personnes_Activites" Member="Activites" ThisKey="Id" OtherKey="Id_Personne" Type="Activites" />
+      <Association Name="Activites_Personnes" Member="Activites1" ThisKey="Id_Activite" OtherKey="Id" Type="Activites" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.Salles" Member="Salles">

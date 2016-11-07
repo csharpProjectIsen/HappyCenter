@@ -30,12 +30,12 @@ namespace HappyCenter
 		
     #region Définitions de méthodes d'extensibilité
     partial void OnCreated();
-    partial void InsertMoniteurs(Moniteurs instance);
-    partial void UpdateMoniteurs(Moniteurs instance);
-    partial void DeleteMoniteurs(Moniteurs instance);
     partial void InsertActivites(Activites instance);
     partial void UpdateActivites(Activites instance);
     partial void DeleteActivites(Activites instance);
+    partial void InsertMoniteurs(Moniteurs instance);
+    partial void UpdateMoniteurs(Moniteurs instance);
+    partial void DeleteMoniteurs(Moniteurs instance);
     partial void InsertPersonnes(Personnes instance);
     partial void UpdatePersonnes(Personnes instance);
     partial void DeletePersonnes(Personnes instance);
@@ -74,19 +74,19 @@ namespace HappyCenter
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<Moniteurs> Moniteurs
-		{
-			get
-			{
-				return this.GetTable<Moniteurs>();
-			}
-		}
-		
 		public System.Data.Linq.Table<Activites> Activites
 		{
 			get
 			{
 				return this.GetTable<Activites>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Moniteurs> Moniteurs
+		{
+			get
+			{
+				return this.GetTable<Moniteurs>();
 			}
 		}
 		
@@ -103,140 +103,6 @@ namespace HappyCenter
 			get
 			{
 				return this.GetTable<Salles>();
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Moniteurs")]
-	public partial class Moniteurs : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _Id;
-		
-		private string _Nom;
-		
-		private string _Prenom;
-		
-		private string _Activite;
-		
-    #region Définitions de méthodes d'extensibilité
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnIdChanging(int value);
-    partial void OnIdChanged();
-    partial void OnNomChanging(string value);
-    partial void OnNomChanged();
-    partial void OnPrenomChanging(string value);
-    partial void OnPrenomChanged();
-    partial void OnActiviteChanging(string value);
-    partial void OnActiviteChanged();
-    #endregion
-		
-		public Moniteurs()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", DbType="Int NOT NULL", IsPrimaryKey=true)]
-		public int Id
-		{
-			get
-			{
-				return this._Id;
-			}
-			set
-			{
-				if ((this._Id != value))
-				{
-					this.OnIdChanging(value);
-					this.SendPropertyChanging();
-					this._Id = value;
-					this.SendPropertyChanged("Id");
-					this.OnIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Nom", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
-		public string Nom
-		{
-			get
-			{
-				return this._Nom;
-			}
-			set
-			{
-				if ((this._Nom != value))
-				{
-					this.OnNomChanging(value);
-					this.SendPropertyChanging();
-					this._Nom = value;
-					this.SendPropertyChanged("Nom");
-					this.OnNomChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Prenom", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
-		public string Prenom
-		{
-			get
-			{
-				return this._Prenom;
-			}
-			set
-			{
-				if ((this._Prenom != value))
-				{
-					this.OnPrenomChanging(value);
-					this.SendPropertyChanging();
-					this._Prenom = value;
-					this.SendPropertyChanged("Prenom");
-					this.OnPrenomChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Activite", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
-		public string Activite
-		{
-			get
-			{
-				return this._Activite;
-			}
-			set
-			{
-				if ((this._Activite != value))
-				{
-					this.OnActiviteChanging(value);
-					this.SendPropertyChanging();
-					this._Activite = value;
-					this.SendPropertyChanged("Activite");
-					this.OnActiviteChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}
@@ -261,6 +127,16 @@ namespace HappyCenter
 		
 		private System.Data.Linq.Binary _Photo;
 		
+		private System.Nullable<int> _Id_Moniteur;
+		
+		private System.Nullable<int> _Id_Personne;
+		
+		private EntitySet<Personnes> _Personnes1;
+		
+		private EntityRef<Moniteurs> _Moniteurs;
+		
+		private EntityRef<Personnes> _Personnes;
+		
     #region Définitions de méthodes d'extensibilité
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -279,10 +155,17 @@ namespace HappyCenter
     partial void OnAge_MaxChanged();
     partial void OnPhotoChanging(System.Data.Linq.Binary value);
     partial void OnPhotoChanged();
+    partial void OnId_MoniteurChanging(System.Nullable<int> value);
+    partial void OnId_MoniteurChanged();
+    partial void OnId_PersonneChanging(System.Nullable<int> value);
+    partial void OnId_PersonneChanged();
     #endregion
 		
 		public Activites()
 		{
+			this._Personnes1 = new EntitySet<Personnes>(new Action<Personnes>(this.attach_Personnes1), new Action<Personnes>(this.detach_Personnes1));
+			this._Moniteurs = default(EntityRef<Moniteurs>);
+			this._Personnes = default(EntityRef<Personnes>);
 			OnCreated();
 		}
 		
@@ -426,6 +309,135 @@ namespace HappyCenter
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id_Moniteur", DbType="Int")]
+		public System.Nullable<int> Id_Moniteur
+		{
+			get
+			{
+				return this._Id_Moniteur;
+			}
+			set
+			{
+				if ((this._Id_Moniteur != value))
+				{
+					if (this._Moniteurs.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnId_MoniteurChanging(value);
+					this.SendPropertyChanging();
+					this._Id_Moniteur = value;
+					this.SendPropertyChanged("Id_Moniteur");
+					this.OnId_MoniteurChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id_Personne", DbType="Int")]
+		public System.Nullable<int> Id_Personne
+		{
+			get
+			{
+				return this._Id_Personne;
+			}
+			set
+			{
+				if ((this._Id_Personne != value))
+				{
+					if (this._Personnes.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnId_PersonneChanging(value);
+					this.SendPropertyChanging();
+					this._Id_Personne = value;
+					this.SendPropertyChanged("Id_Personne");
+					this.OnId_PersonneChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Activites_Personnes", Storage="_Personnes1", ThisKey="Id", OtherKey="Id_Activite")]
+		public EntitySet<Personnes> Personnes1
+		{
+			get
+			{
+				return this._Personnes1;
+			}
+			set
+			{
+				this._Personnes1.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Moniteurs_Activites", Storage="_Moniteurs", ThisKey="Id_Moniteur", OtherKey="Id", IsForeignKey=true)]
+		public Moniteurs Moniteurs
+		{
+			get
+			{
+				return this._Moniteurs.Entity;
+			}
+			set
+			{
+				Moniteurs previousValue = this._Moniteurs.Entity;
+				if (((previousValue != value) 
+							|| (this._Moniteurs.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Moniteurs.Entity = null;
+						previousValue.Activites.Remove(this);
+					}
+					this._Moniteurs.Entity = value;
+					if ((value != null))
+					{
+						value.Activites.Add(this);
+						this._Id_Moniteur = value.Id;
+					}
+					else
+					{
+						this._Id_Moniteur = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("Moniteurs");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Personnes_Activites", Storage="_Personnes", ThisKey="Id_Personne", OtherKey="Id", IsForeignKey=true)]
+		public Personnes Personnes
+		{
+			get
+			{
+				return this._Personnes.Entity;
+			}
+			set
+			{
+				Personnes previousValue = this._Personnes.Entity;
+				if (((previousValue != value) 
+							|| (this._Personnes.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Personnes.Entity = null;
+						previousValue.Activites.Remove(this);
+					}
+					this._Personnes.Entity = value;
+					if ((value != null))
+					{
+						value.Activites.Add(this);
+						this._Id_Personne = value.Id;
+					}
+					else
+					{
+						this._Id_Personne = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("Personnes");
+				}
+			}
+		}
+		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -445,6 +457,156 @@ namespace HappyCenter
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
+		
+		private void attach_Personnes1(Personnes entity)
+		{
+			this.SendPropertyChanging();
+			entity.Activites1 = this;
+		}
+		
+		private void detach_Personnes1(Personnes entity)
+		{
+			this.SendPropertyChanging();
+			entity.Activites1 = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Moniteurs")]
+	public partial class Moniteurs : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _Id;
+		
+		private string _Nom;
+		
+		private string _Prenom;
+		
+		private EntitySet<Activites> _Activites;
+		
+    #region Définitions de méthodes d'extensibilité
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIdChanging(int value);
+    partial void OnIdChanged();
+    partial void OnNomChanging(string value);
+    partial void OnNomChanged();
+    partial void OnPrenomChanging(string value);
+    partial void OnPrenomChanged();
+    #endregion
+		
+		public Moniteurs()
+		{
+			this._Activites = new EntitySet<Activites>(new Action<Activites>(this.attach_Activites), new Action<Activites>(this.detach_Activites));
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int Id
+		{
+			get
+			{
+				return this._Id;
+			}
+			set
+			{
+				if ((this._Id != value))
+				{
+					this.OnIdChanging(value);
+					this.SendPropertyChanging();
+					this._Id = value;
+					this.SendPropertyChanged("Id");
+					this.OnIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Nom", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string Nom
+		{
+			get
+			{
+				return this._Nom;
+			}
+			set
+			{
+				if ((this._Nom != value))
+				{
+					this.OnNomChanging(value);
+					this.SendPropertyChanging();
+					this._Nom = value;
+					this.SendPropertyChanged("Nom");
+					this.OnNomChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Prenom", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string Prenom
+		{
+			get
+			{
+				return this._Prenom;
+			}
+			set
+			{
+				if ((this._Prenom != value))
+				{
+					this.OnPrenomChanging(value);
+					this.SendPropertyChanging();
+					this._Prenom = value;
+					this.SendPropertyChanged("Prenom");
+					this.OnPrenomChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Moniteurs_Activites", Storage="_Activites", ThisKey="Id", OtherKey="Id_Moniteur")]
+		public EntitySet<Activites> Activites
+		{
+			get
+			{
+				return this._Activites;
+			}
+			set
+			{
+				this._Activites.Assign(value);
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_Activites(Activites entity)
+		{
+			this.SendPropertyChanging();
+			entity.Moniteurs = this;
+		}
+		
+		private void detach_Activites(Activites entity)
+		{
+			this.SendPropertyChanging();
+			entity.Moniteurs = null;
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Personnes")]
@@ -461,6 +623,12 @@ namespace HappyCenter
 		
 		private int _Age;
 		
+		private System.Nullable<int> _Id_Activite;
+		
+		private EntitySet<Activites> _Activites;
+		
+		private EntityRef<Activites> _Activites1;
+		
     #region Définitions de méthodes d'extensibilité
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -473,10 +641,14 @@ namespace HappyCenter
     partial void OnPrenomChanged();
     partial void OnAgeChanging(int value);
     partial void OnAgeChanged();
+    partial void OnId_ActiviteChanging(System.Nullable<int> value);
+    partial void OnId_ActiviteChanged();
     #endregion
 		
 		public Personnes()
 		{
+			this._Activites = new EntitySet<Activites>(new Action<Activites>(this.attach_Activites), new Action<Activites>(this.detach_Activites));
+			this._Activites1 = default(EntityRef<Activites>);
 			OnCreated();
 		}
 		
@@ -560,6 +732,77 @@ namespace HappyCenter
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id_Activite", DbType="Int")]
+		public System.Nullable<int> Id_Activite
+		{
+			get
+			{
+				return this._Id_Activite;
+			}
+			set
+			{
+				if ((this._Id_Activite != value))
+				{
+					if (this._Activites1.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnId_ActiviteChanging(value);
+					this.SendPropertyChanging();
+					this._Id_Activite = value;
+					this.SendPropertyChanged("Id_Activite");
+					this.OnId_ActiviteChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Personnes_Activites", Storage="_Activites", ThisKey="Id", OtherKey="Id_Personne")]
+		public EntitySet<Activites> Activites
+		{
+			get
+			{
+				return this._Activites;
+			}
+			set
+			{
+				this._Activites.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Activites_Personnes", Storage="_Activites1", ThisKey="Id_Activite", OtherKey="Id", IsForeignKey=true)]
+		public Activites Activites1
+		{
+			get
+			{
+				return this._Activites1.Entity;
+			}
+			set
+			{
+				Activites previousValue = this._Activites1.Entity;
+				if (((previousValue != value) 
+							|| (this._Activites1.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Activites1.Entity = null;
+						previousValue.Personnes1.Remove(this);
+					}
+					this._Activites1.Entity = value;
+					if ((value != null))
+					{
+						value.Personnes1.Add(this);
+						this._Id_Activite = value.Id;
+					}
+					else
+					{
+						this._Id_Activite = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("Activites1");
+				}
+			}
+		}
+		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -578,6 +821,18 @@ namespace HappyCenter
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
+		}
+		
+		private void attach_Activites(Activites entity)
+		{
+			this.SendPropertyChanging();
+			entity.Personnes = this;
+		}
+		
+		private void detach_Activites(Activites entity)
+		{
+			this.SendPropertyChanging();
+			entity.Personnes = null;
 		}
 	}
 	
