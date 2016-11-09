@@ -380,7 +380,7 @@ namespace HappyCenter
 		
 		private int _Age_Max;
 		
-		private System.Data.Linq.Binary _Photo;
+		private string _Photo;
 		
 		private string _Etat;
 		
@@ -408,7 +408,7 @@ namespace HappyCenter
     partial void OnAge_MinChanged();
     partial void OnAge_MaxChanging(int value);
     partial void OnAge_MaxChanged();
-    partial void OnPhotoChanging(System.Data.Linq.Binary value);
+    partial void OnPhotoChanging(string value);
     partial void OnPhotoChanged();
     partial void OnEtatChanging(string value);
     partial void OnEtatChanged();
@@ -563,8 +563,8 @@ namespace HappyCenter
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Photo", DbType="Image NOT NULL", CanBeNull=false, UpdateCheck=UpdateCheck.Never)]
-		public System.Data.Linq.Binary Photo
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Photo", DbType="NVarChar(MAX) NOT NULL", CanBeNull=false)]
+		public string Photo
 		{
 			get
 			{

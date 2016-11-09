@@ -17,9 +17,9 @@ namespace HappyCenter.View
     /// <summary>
     /// Logique d'interaction pour VoirMoniteur.xaml
     /// </summary>
-    public partial class VoirMoniteur : Window
+    public partial class VoirInformations : Window
     {
-        public VoirMoniteur()
+        public VoirInformations()
         {
             InitializeComponent();
         }

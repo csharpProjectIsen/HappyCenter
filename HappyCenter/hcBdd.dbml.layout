@@ -8,24 +8,24 @@
         <elementListCompartment Id="ba121c26-7732-4c63-a1be-f2b29047a580" absoluteBounds="1.0149999999999997, 1.585, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="a74ece83-122f-4056-99e6-4a7897d23818" absoluteBounds="5.375, 1, 2, 2.7324039713541666">
+    <classShape Id="07ea7561-5e65-40fd-af4d-f171bd5b236c" absoluteBounds="4.625, 1, 2, 2.7324039713541666">
       <DataClassMoniker Name="/hcBddDataContext/Activites" />
       <nestedChildShapes>
-        <elementListCompartment Id="c8a67e3d-69aa-4629-9ac4-a70d04165229" absoluteBounds="5.39, 1.46, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="cfa04965-4907-4337-b797-5c6a7a428656" absoluteBounds="4.64, 1.46, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(5.375 : 2.20274983723958); (3 : 2.20274983723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(4.625 : 2.20274983723958); (3 : 2.20274983723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/hcBddDataContext/Activites/Activites_Utilisateurs" />
       <nodes>
-        <classShapeMoniker Id="a74ece83-122f-4056-99e6-4a7897d23818" />
+        <classShapeMoniker Id="07ea7561-5e65-40fd-af4d-f171bd5b236c" />
         <classShapeMoniker Id="bb7cca3c-ccc4-45c8-af6e-932092876fa4" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(3 : 1.60137491861979); (5.375 : 1.60137491861979)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(3 : 1.60137491861979); (4.625 : 1.60137491861979)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/hcBddDataContext/Utilisateurs/Utilisateurs_Activites" />
       <nodes>
         <classShapeMoniker Id="bb7cca3c-ccc4-45c8-af6e-932092876fa4" />
-        <classShapeMoniker Id="a74ece83-122f-4056-99e6-4a7897d23818" />
+        <classShapeMoniker Id="07ea7561-5e65-40fd-af4d-f171bd5b236c" />
       </nodes>
     </associationConnector>
   </nestedChildShapes>
