@@ -79,11 +79,11 @@
     <Compile Include="View\VoirAccueil.xaml.cs">
       <DependentUpon>VoirAccueil.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\VoirAtelier.xaml.cs">
-      <DependentUpon>VoirAtelier.xaml</DependentUpon>
+    <Compile Include="View\VoirActivite.xaml.cs">
+      <DependentUpon>VoirActivite.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\VoirMoniteur.xaml.cs">
-      <DependentUpon>VoirMoniteur.xaml</DependentUpon>
+    <Compile Include="View\VoirInformations.xaml.cs">
+      <DependentUpon>VoirInformations.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\VoirPersonne.xaml.cs">
       <DependentUpon>VoirPersonne.xaml</DependentUpon>
@@ -104,11 +104,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\VoirAtelier.xaml">
+    <Page Include="View\VoirActivite.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\VoirMoniteur.xaml">
+    <Page Include="View\VoirInformations.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

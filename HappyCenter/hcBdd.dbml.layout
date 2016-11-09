@@ -2,50 +2,31 @@
 <ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="hcBdd">
   <DataContextMoniker Name="/hcBddDataContext" />
   <nestedChildShapes>
-    <classShape Id="cad0a3f4-433e-4ad0-95dd-5caa603fcfc3" absoluteBounds="3.375, 0.5, 2, 2.5401025390625">
+    <classShape Id="bb7cca3c-ccc4-45c8-af6e-932092876fa4" absoluteBounds="1, 1.125, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/hcBddDataContext/Utilisateurs" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ba121c26-7732-4c63-a1be-f2b29047a580" absoluteBounds="1.0149999999999997, 1.585, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a74ece83-122f-4056-99e6-4a7897d23818" absoluteBounds="5.375, 1, 2, 2.7324039713541666">
       <DataClassMoniker Name="/hcBddDataContext/Activites" />
       <nestedChildShapes>
-        <elementListCompartment Id="5c3a36a4-d76d-48c6-94e0-31669c855554" absoluteBounds="3.3899999999999997, 0.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="c8a67e3d-69aa-4629-9ac4-a70d04165229" absoluteBounds="5.39, 1.46, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="a3df59c0-17b5-47dd-b080-bf768265f9ce" absoluteBounds="6, 0.75, 2, 1.3862939453125">
-      <DataClassMoniker Name="/hcBddDataContext/Moniteurs" />
-      <nestedChildShapes>
-        <elementListCompartment Id="67cea6f5-297f-4e65-8a43-6d59e3de8d1c" absoluteBounds="6.015, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <associationConnector edgePoints="[(6 : 1.44314697265625); (5.375 : 1.44314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
-      <AssociationMoniker Name="/hcBddDataContext/Moniteurs/Moniteurs_Activites" />
+    <associationConnector edgePoints="[(5.375 : 2.20274983723958); (3 : 2.20274983723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/hcBddDataContext/Activites/Activites_Utilisateurs" />
       <nodes>
-        <classShapeMoniker Id="a3df59c0-17b5-47dd-b080-bf768265f9ce" />
-        <classShapeMoniker Id="cad0a3f4-433e-4ad0-95dd-5caa603fcfc3" />
+        <classShapeMoniker Id="a74ece83-122f-4056-99e6-4a7897d23818" />
+        <classShapeMoniker Id="bb7cca3c-ccc4-45c8-af6e-932092876fa4" />
       </nodes>
     </associationConnector>
-    <classShape Id="f31b57be-8c8c-4dd9-b62a-0fd3d77a65fe" absoluteBounds="0.5, 0.75, 2, 1.7708968098958331">
-      <DataClassMoniker Name="/hcBddDataContext/Personnes" />
-      <nestedChildShapes>
-        <elementListCompartment Id="5c2f3750-23c2-4153-a881-66791721691d" absoluteBounds="0.51500000000000012, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <associationConnector edgePoints="[(2.5 : 1.63544840494792); (3.375 : 1.63544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
-      <AssociationMoniker Name="/hcBddDataContext/Personnes/Personnes_Activites" />
+    <associationConnector edgePoints="[(3 : 1.60137491861979); (5.375 : 1.60137491861979)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/hcBddDataContext/Utilisateurs/Utilisateurs_Activites" />
       <nodes>
-        <classShapeMoniker Id="f31b57be-8c8c-4dd9-b62a-0fd3d77a65fe" />
-        <classShapeMoniker Id="cad0a3f4-433e-4ad0-95dd-5caa603fcfc3" />
+        <classShapeMoniker Id="bb7cca3c-ccc4-45c8-af6e-932092876fa4" />
+        <classShapeMoniker Id="a74ece83-122f-4056-99e6-4a7897d23818" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(3.375 : 1.13022420247396); (2.5 : 1.13022420247396)]" fixedFrom="Algorithm" fixedTo="Algorithm">
-      <AssociationMoniker Name="/hcBddDataContext/Activites/Activites_Personnes" />
-      <nodes>
-        <classShapeMoniker Id="cad0a3f4-433e-4ad0-95dd-5caa603fcfc3" />
-        <classShapeMoniker Id="f31b57be-8c8c-4dd9-b62a-0fd3d77a65fe" />
-      </nodes>
-    </associationConnector>
-    <classShape Id="5310659d-2335-409b-872a-9e883bd5c1ec" absoluteBounds="6.375, 2.625, 2, 1.9631982421875">
-      <DataClassMoniker Name="/hcBddDataContext/Salles" />
-      <nestedChildShapes>
-        <elementListCompartment Id="bd217c35-0d97-4cbc-8535-3ac075527dc2" absoluteBounds="6.3900000000000006, 3.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
   </nestedChildShapes>
 </ordesignerObjectsDiagram>
