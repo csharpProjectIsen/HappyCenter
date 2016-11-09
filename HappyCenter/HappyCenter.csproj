@@ -55,14 +55,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="View\VoirAtelier.xaml.cs">
-      <DependentUpon>VoirAtelier.xaml</DependentUpon>
+    <Compile Include="View\VoirContact.xaml.cs">
+      <DependentUpon>VoirContact.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\VoirMoniteur.xaml.cs">
-      <DependentUpon>VoirMoniteur.xaml</DependentUpon>
+    <Compile Include="View\VoirDesinscription.xaml.cs">
+      <DependentUpon>VoirDesinscription.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\VoirPersonne.xaml.cs">
-      <DependentUpon>VoirPersonne.xaml</DependentUpon>
+    <Compile Include="View\VoirInscription.xaml.cs">
+      <DependentUpon>VoirInscription.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\VoirPlannification.xaml.cs">
+      <DependentUpon>VoirPlannification.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -76,15 +79,19 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="View\VoirAtelier.xaml">
+    <Page Include="View\VoirContact.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\VoirMoniteur.xaml">
+    <Page Include="View\VoirDesinscription.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\VoirPersonne.xaml">
+    <Page Include="View\VoirInscription.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\VoirPlannification.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -121,6 +128,18 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ViewModel\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ressources\utilisateur.png" />
+    <Resource Include="Ressources\jeuxSociete.png" />
+    <Resource Include="Ressources\foot.png" />
+    <Resource Include="Ressources\esp.png" />
+    <Resource Include="Ressources\cuisine.png" />
+    <Resource Include="Ressources\fitness.png" />
+    <Resource Include="Ressources\arts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ressources\IsenImage.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

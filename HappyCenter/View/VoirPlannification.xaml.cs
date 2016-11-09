@@ -16,11 +16,10 @@ using System.Windows.Shapes;
 namespace HappyCenter.View
 {
     /// <summary>
-    /// Logique d'interaction pour VoirPersonne.xaml
+    /// Interaction logic for VoirPlannification.xaml
     /// </summary>
-    public partial class VoirPersonne : Window
+    public partial class VoirPlannification : Window
     {
-
         public class DataObject
         {
             public string A { get; set; }
@@ -30,33 +29,18 @@ namespace HappyCenter.View
             public string E { get; set; }
             public string F { get; set; }
         }
-        public VoirPersonne()
+
+
+        public VoirPlannification()
         {
-           // HappyCenter.View.VoirPersonne vp = new View.VoirPersonne();
             InitializeComponent();
-            // vp.Show();
             var list = new ObservableCollection<DataObject>();
             list.Add(new DataObject() { A = "", B = "MARDI", C = "MERCREDI", D = "JEUDI", E = "VENDREDI", F = "SAMEDI" });
-            list.Add(new DataObject() { A = "8h - 10 h", B = " ", C = " ", D = " ", E = " ", F = " " });
-            list.Add(new DataObject() { A = "10h - 12 h", B = " ", C = " ", D = " ", E = " ", F = " " });
-            list.Add(new DataObject() { A = "14h - 16 h", B = " ", C = " ", D = " ", E = " ", F = " " });
-            list.Add(new DataObject() { A = "16h - 18 h", B = " ", C = " ", D = " ", E = " ", F = " " });
-            this.planning.ItemsSource = list;
-
-
-        }
-
-        private void listView_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-        private void planning_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, RoutedEventArgs e)
-        {
+            list.Add(new DataObject() { A = "\n8h - 10 h", B = "\n\n", C = "\n\n", D = "\n\n", E = "\n\n", F = "\n\n" });
+            list.Add(new DataObject() { A = "\n10h - 12 h", B = "\n\n", C = "\n\n", D = "\n\n", E = "\n\n", F = "\n\n" });
+            list.Add(new DataObject() { A = "\n14h - 16 h", B = "\n\n", C = "\n\n", D = "\n\n", E = "\n\n", F = "\n\n" });
+            list.Add(new DataObject() { A = "\n16h - 18 h", B = "\n\n", C = "\n\n", D = "\n\n", E = "\n\n", F = "\n\n" });
+            this.plannings.ItemsSource = list;
 
         }
     }

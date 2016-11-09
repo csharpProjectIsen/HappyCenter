@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace HappyCenter.View
 {
     /// <summary>
-    /// Logique d'interaction pour VoirAtelier.xaml
+    /// Interaction logic for VoirInscription.xaml
     /// </summary>
-    public partial class VoirAtelier : Window
+    public partial class VoirInscription : Window
     {
-        public VoirAtelier()
+        public VoirInscription()
         {
             InitializeComponent();
         }
