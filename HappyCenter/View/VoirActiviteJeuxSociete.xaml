@@ -1,11 +1,11 @@
-﻿<Window x:Class="HappyCenter.View.VoirActiviteCuisine"
+﻿<Window x:Class="HappyCenter.View.VoirActiviteJeuxSociete"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HappyCenter.View"
         mc:Ignorable="d"
-        Title="VoirActiviteCuisine" Height="510" Width="800">
+        Title="VoirActiviteJeuxSociete" Height="510" Width="800">
     <Grid Background="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}">
         <Label x:Name="label" Content="BIENVENUE CHEZ HAPPY CENTER" HorizontalAlignment="Left" Margin="264,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.078,-2.707" FontFamily="Segoe Print" FontSize="16"/>
         <Menu x:Name="menu" HorizontalAlignment="Left" Height="23" Margin="139,61,0,0" VerticalAlignment="Top" Width="532" Background="#FAD1A9">
@@ -17,8 +17,8 @@
         </Menu>
 
         <Rectangle HorizontalAlignment="Left" Height="276" Margin="100,106,0,0" VerticalAlignment="Top" Width="615" Fill="White"/>
-        <Image x:Name="photo_activite" HorizontalAlignment="Left" Height="103" Margin="139,144,0,0" VerticalAlignment="Top" Width="144" Source="/HappyCenter;component/Ressources/cuisine.PNG"/>
-        <TextBlock x:Name="description" HorizontalAlignment="Left" Margin="339,209,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="102" Width="310"><Run Foreground="#FFA31515" FontSize="20" FontFamily="Arial" Text="A"/><Run Foreground="#FFA31515" FontSize="20" FontFamily="Arial" Text="pprenez à cuisiner des plats simples et équilibrés "/><Run Foreground="#FFA31515" FontSize="20" FontFamily="Arial" Text="avec"/><LineBreak/><Run Foreground="#FFA31515" FontSize="20" FontFamily="Arial"/><LineBreak/><Run Foreground="#FFA31515" FontSize="20" FontFamily="Arial" Text="                   "/><Run Foreground="#FFA31515" FontSize="20" FontFamily="Arial" Text=" Jean H "/></TextBlock>
+        <Image x:Name="photo_activite" HorizontalAlignment="Left" Height="103" Margin="139,144,0,0" VerticalAlignment="Top" Width="144" Source="/HappyCenter;component/Ressources/jeuxSociete.png"/>
+        <TextBlock x:Name="description" HorizontalAlignment="Left" Margin="339,209,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="102" Width="310"><Run Foreground="#FFA31515" FontSize="20" FontFamily="Arial" Text="Venez passer un moment conviviale en jouant aux cartes, aux dominos ... avec "/><Run Foreground="#FFA31515" FontSize="20" FontFamily="Arial"/><LineBreak/><Run Foreground="#FFA31515" FontSize="20" FontFamily="Arial" Text="             "/><Run Foreground="#FFA31515" FontSize="20" FontFamily="Arial" Text="H"/><Run Foreground="#FFA31515" FontSize="20" FontFamily="Arial" Text="élène F"/><Run Foreground="#FFA31515" FontSize="20" FontFamily="Arial" Text=" "/></TextBlock>
         <Label x:Name="etat"  HorizontalAlignment="Left" Margin="429,316,0,0" VerticalAlignment="Top" Height="30" Width="242"/>
         <Label x:Name="effectif_actuel"  HorizontalAlignment="Left" Margin="197,316,0,0" VerticalAlignment="Top" Width="115" Height="30"/>
 

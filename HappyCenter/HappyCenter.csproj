@@ -79,14 +79,26 @@
     <Compile Include="View\VoirAccueil.xaml.cs">
       <DependentUpon>VoirAccueil.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\VoirActiviteEspagnol.xaml.cs">
+      <DependentUpon>VoirActiviteEspagnol.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\VoirActiviteFoot.xaml.cs">
+      <DependentUpon>VoirActiviteFoot.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\VoirActiviteFitness.xaml.cs">
+      <DependentUpon>VoirActiviteFitness.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\VoirActiviteArts.xaml.cs">
+      <DependentUpon>VoirActiviteArts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\VoirActiviteJeuxSociete.xaml.cs">
+      <DependentUpon>VoirActiviteJeuxSociete.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\VoirActiviteCuisine.xaml.cs">
       <DependentUpon>VoirActiviteCuisine.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\VoirInformations.xaml.cs">
       <DependentUpon>VoirInformations.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\VoirPersonne.xaml.cs">
-      <DependentUpon>VoirPersonne.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -104,15 +116,31 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\VoirActiviteEspagnol.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\VoirActiviteFoot.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\VoirActiviteFitness.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\VoirActiviteArts.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\VoirActiviteJeuxSociete.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="View\VoirActiviteCuisine.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\VoirInformations.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\VoirPersonne.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

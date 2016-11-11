@@ -26,11 +26,7 @@ namespace HappyCenter
         {
             InitializeComponent();
             HappyCenter.View.VoirAccueil va = new View.VoirAccueil();
-            HappyCenter.View.VoirInformations vi = new View.VoirInformations();
-            //HappyCenter.View.VoirActivite vac = new View.VoirActivite();
             va.Show();
-            vi.Show();
-            //vac.Show();
         }
     }
 }

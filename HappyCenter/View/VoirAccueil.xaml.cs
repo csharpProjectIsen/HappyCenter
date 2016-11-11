@@ -47,21 +47,52 @@ namespace HappyCenter.View
 
         }
 
-        private void listView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void btn_cuisine_Click(object sender, RoutedEventArgs e)
         {
-
+            VoirActiviteCuisine cuisine = new VoirActiviteCuisine();
+            cuisine.etat.Content = cuisine.CalculEtat();
+            cuisine.Show();
+            this.Close();
         }
-        private void planning_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
 
+        private void btn_arts_Click(object sender, RoutedEventArgs e)
+        {
+            VoirActiviteArts arts = new VoirActiviteArts();
+            arts.etat.Content = arts.CalculEtat();
+            arts.Show();
+            this.Close();
         }
-        private void Image_Loaded(object sender, RoutedEventArgs e)
-        {
-            // ... Create a new BitmapImage.
 
-            Activites a;
-           
-            
+        private void btn_foot_Click(object sender, RoutedEventArgs e)
+        {
+            VoirActiviteFoot foot = new VoirActiviteFoot();
+            foot.etat.Content = foot.CalculEtat();
+            foot.Show();
+            this.Close();
+        }
+
+        private void btn_jeuxsociete_Click(object sender, RoutedEventArgs e)
+        {
+            VoirActiviteJeuxSociete jeuxSo = new VoirActiviteJeuxSociete();
+            jeuxSo.etat.Content = jeuxSo.CalculEtat();
+            jeuxSo.Show();
+            this.Close();
+        }
+
+        private void btn_fitness_Click(object sender, RoutedEventArgs e)
+        {
+            VoirActiviteFitness fitness = new VoirActiviteFitness();
+            fitness.etat.Content = fitness.CalculEtat();
+            fitness.Show();
+            this.Close();
+        }
+
+        private void btn_espagnol_Click(object sender, RoutedEventArgs e)
+        {
+            VoirActiviteEspagnol espagnol = new VoirActiviteEspagnol();
+            espagnol.etat.Content = espagnol.CalculEtat();
+            espagnol.Show();
+            this.Close();
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
@@ -69,9 +100,6 @@ namespace HappyCenter.View
 
         }
 
-        private void MenuItem_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+  
     }
 }
