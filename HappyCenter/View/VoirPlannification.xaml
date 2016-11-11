@@ -36,6 +36,9 @@
             <MenuItem Header="Contact" Width="99" FontWeight="Bold" FontFamily="Arial" Click="MenuItem_Contact_Click"/>
             <MenuItem Header="Chat" Width="92" FontWeight="Bold" FontFamily="Arial" Click="MenuItem_Chat_Click"/>
         </Menu>
-        <Button x:Name="btnDesinscription" Content="Désinscription" Grid.Column="2" HorizontalAlignment="Left" Margin="675,412,0,0" VerticalAlignment="Top" Width="86" Background="#BDD387" Height="28"/>
+        <Button x:Name="btnDesinscription" Content="Désinscription" Grid.Column="2" HorizontalAlignment="Left" Margin="675,412,0,0" VerticalAlignment="Top" Width="86" Background="#BDD387" Height="28" Click="btnDesinscription_Click"/>
+        <Image x:Name="image" Grid.Column="2" HorizontalAlignment="Left" Height="44" Margin="295,143,0,0" VerticalAlignment="Top" Width="60" Source="/HappyCenter;component/Ressources/cuisine.png"/>
+        <Image x:Name="image1" Grid.Column="2" HorizontalAlignment="Left" Height="44" Margin="661,143,0,0" VerticalAlignment="Top" Width="47" Source="/HappyCenter;component/Ressources/jeuxSociete.png"/>
+        <Image x:Name="image2" Grid.Column="2" HorizontalAlignment="Left" Height="44" Margin="393,194,0,0" VerticalAlignment="Top" Width="45" Source="/HappyCenter;component/Ressources/arts.png"/>
     </Grid>
 </Window>

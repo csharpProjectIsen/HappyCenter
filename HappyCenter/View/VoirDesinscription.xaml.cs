@@ -56,7 +56,7 @@ namespace HappyCenter.View
         {
             VoirChat chat = new VoirChat();
             chat.Show();
-            chat.Close();
+            this.Close();
         }
 
 

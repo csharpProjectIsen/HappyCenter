@@ -36,45 +36,25 @@
         <Label x:Name="lblJour5" Content="jour :&#xA;" Grid.Column="2" HorizontalAlignment="Left" Margin="527,248,0,0" VerticalAlignment="Top" Height="28" Width="42" RenderTransformOrigin="0.405,2.143"/>
         <Label x:Name="lblJour6" Content="jour :&#xA;" Grid.Column="2" HorizontalAlignment="Left" Margin="527,334,0,0" VerticalAlignment="Top" Height="28" Width="42" RenderTransformOrigin="0.476,0.417"/>
         <ComboBox x:Name="cboxDesinscription1" Grid.Column="2" HorizontalAlignment="Left" Margin="210,156,0,0" VerticalAlignment="Top" Width="80">
-            <ComboBoxItem Content="Mardi"/>
             <ComboBoxItem Content="Mercredi"/>
-            <ComboBoxItem Content="Jeudi"/>
             <ComboBoxItem Content="Vendredi"/>
-            <ComboBoxItem Content="Samedi"/>
         </ComboBox>
         <ComboBox x:Name="cboxDesinscription2" Grid.Column="2" HorizontalAlignment="Left" Margin="210,247,0,0" VerticalAlignment="Top" Width="80">
             <ComboBoxItem Content="Mardi"/>
-            <ComboBoxItem Content="Mercredi"/>
-            <ComboBoxItem Content="Jeudi"/>
-            <ComboBoxItem Content="Vendredi"/>
-            <ComboBoxItem Content="Samedi"/>
         </ComboBox>
         <ComboBox x:Name="cboxDesinscription3" Grid.Column="2" HorizontalAlignment="Left" Margin="210,337,0,0" VerticalAlignment="Top" Width="80">
-            <ComboBoxItem Content="Mardi"/>
-            <ComboBoxItem Content="Mercredi"/>
             <ComboBoxItem Content="Jeudi"/>
-            <ComboBoxItem Content="Vendredi"/>
-            <ComboBoxItem Content="Samedi"/>
         </ComboBox>
         <ComboBox x:Name="cboxDesinscription4" Grid.Column="2" HorizontalAlignment="Left" Margin="564,156,0,0" VerticalAlignment="Top" Width="80">
-            <ComboBoxItem Content="Mardi"/>
-            <ComboBoxItem Content="Mercredi"/>
             <ComboBoxItem Content="Jeudi"/>
             <ComboBoxItem Content="Vendredi"/>
-            <ComboBoxItem Content="Samedi"/>
         </ComboBox>
         <ComboBox x:Name="cboxDesinscription5" Grid.Column="2" HorizontalAlignment="Left" Margin="564,251,0,0" VerticalAlignment="Top" Width="80">
             <ComboBoxItem Content="Mardi"/>
-            <ComboBoxItem Content="Mercredi"/>
-            <ComboBoxItem Content="Jeudi"/>
-            <ComboBoxItem Content="Vendredi"/>
             <ComboBoxItem Content="Samedi"/>
         </ComboBox>
         <ComboBox x:Name="cboxDesinscription6" Grid.Column="2" HorizontalAlignment="Left" Margin="564,337,0,0" VerticalAlignment="Top" Width="80">
-            <ComboBoxItem Content="Mardi"/>
             <ComboBoxItem Content="Mercredi"/>
-            <ComboBoxItem Content="Jeudi"/>
-            <ComboBoxItem Content="Vendredi"/>
             <ComboBoxItem Content="Samedi"/>
         </ComboBox>
         <Button x:Name="button" Content="Désinscription" Grid.Column="2" HorizontalAlignment="Left" Margin="315,157,0,0" VerticalAlignment="Top" Width="80" Background="#FFFA7470"/>

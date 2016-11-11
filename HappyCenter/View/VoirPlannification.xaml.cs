@@ -76,5 +76,12 @@ namespace HappyCenter.View
             contact.Show();
             this.Close();
         }
+
+        private void btnDesinscription_Click(object sender, RoutedEventArgs e)
+        {
+            VoirDesinscription desinscription = new VoirDesinscription();
+            desinscription.Show();
+            this.Close();
+        }
     }
 }
