@@ -1,5 +1,7 @@
-﻿using System;
+﻿using HappyCenter.Properties;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,13 +17,36 @@ using System.Windows.Shapes;
 namespace HappyCenter.View
 {
     /// <summary>
-    /// Interaction logic for VoirDesinscription.xaml
+    /// Logique d'interaction pour VoirActiviteEspagnol.xaml
     /// </summary>
-    public partial class VoirDesinscription : Window
+    public partial class VoirActiviteEspagnol : Window
     {
-        public VoirDesinscription()
+        public DateTime temps = new DateTime(2016, 5, 2, 10, 0, 0);
+        public string jour = "jeudi";
+
+        public VoirActiviteEspagnol()
         {
             InitializeComponent();
+        }
+
+        public string CalculEtat()
+        {
+            DateTime h = DateTime.Now;
+            string jour_actuel = h.DayOfWeek.ToString();
+            TimeSpan diff = h - temps;
+            double hours = diff.TotalHours;
+
+            while (hours<2)
+            {
+               string letat = "activité en cours";
+                if(jour_actuel == jour)
+                {
+                    return letat;
+                }
+                
+            }
+            string letatfin = "activité terminée";
+            return letatfin;
         }
 
         private void MenuItem_Accueil_Click(object sender, RoutedEventArgs e)
@@ -56,9 +81,8 @@ namespace HappyCenter.View
         {
             VoirChat chat = new VoirChat();
             chat.Show();
-            chat.Close();
+            this.Close();
         }
-
-
     }
-}
+ }
+

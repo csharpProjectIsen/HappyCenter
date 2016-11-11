@@ -16,11 +16,11 @@
 
 
         <Menu x:Name="menu1" Grid.Column="2" HorizontalAlignment="Left" Height="21" Margin="183,63,0,0" VerticalAlignment="Top" Width="525" Background="#FAD1A9">
-            <MenuItem Header="Accueil" Width="105" FontWeight="Bold" FontFamily="Arial" Height="21"/>
-            <MenuItem Header="Informations" Width="113" FontWeight="Bold" FontFamily="Arial" />
-            <MenuItem Header="Mon Planning" Width="113" FontWeight="Bold" FontFamily="Arial"/>
-            <MenuItem Header="Contact" Width="99" FontWeight="Bold" FontFamily="Arial"/>
-            <MenuItem Header="Chat" Width="92" FontWeight="Bold" FontFamily="Arial"/>
+            <MenuItem Header="Accueil" Width="105" FontWeight="Bold" FontFamily="Arial" Height="21" Click="MenuItem_Accueil_Click"/>
+            <MenuItem Header="Informations" Width="113" FontWeight="Bold" FontFamily="Arial"  Click="MenuItem_Informations_Click"/>
+            <MenuItem Header="Mon Planning" Width="113" FontWeight="Bold" FontFamily="Arial"  Click="MenuItem_Mon_Planning_Click"/>
+            <MenuItem Header="Contact" Width="99" FontWeight="Bold" FontFamily="Arial"  Click="MenuItem_Contact_Click"/>
+            <MenuItem Header="Chat" Width="92" FontWeight="Bold" FontFamily="Arial"  Click="MenuItem_Chat_Click"/>
         </Menu>
         <Rectangle Grid.Column="2" Fill="#FFFFBF" HorizontalAlignment="Left" Height="371" Margin="32,98,0,0" Stroke="Black" VerticalAlignment="Top" Width="752" />
         <Rectangle Grid.Column="2" Fill="#FFFFFF" HorizontalAlignment="Left" Height="287" Margin="48,119,0,0" Stroke="Black" VerticalAlignment="Top" Width="321"/>
@@ -30,16 +30,35 @@
         <Label x:Name="lblNom" Content="Nom :" Grid.Column="2" HorizontalAlignment="Left" Margin="67,280,0,0" VerticalAlignment="Top" Width="46" FontFamily="Arial" FontWeight="Bold" FontSize="12"/>
         <Label x:Name="lblPrenom" Content="prenom :" Grid.Column="2" HorizontalAlignment="Left" Margin="67,318,0,0" VerticalAlignment="Top" Width="61" FontFamily="Arial" FontWeight="Bold" FontSize="12"/>
         <Label x:Name="lblAge" Content="Âge :" Grid.Column="2" HorizontalAlignment="Left" Margin="67,362,0,0" VerticalAlignment="Top" Width="46" FontFamily="Arial" FontWeight="Bold" FontSize="12"/>
-        <TextBox x:Name="tboxName" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="162,280,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="165"/>
-        <TextBox x:Name="tboxPrenom" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="162,322,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="165"/>
-        <TextBox x:Name="tboxAge" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="162,365,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="165"/>
+        <TextBox x:Name="tboxName"  MaxLength="25" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="162,280,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="165"/>
+        <TextBox x:Name="tboxPrenom"  MaxLength="25" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="162,322,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="165"/>
+        <TextBox x:Name="tboxAge"  Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="162,365,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="165"/>
         <Label x:Name="lblChoixActivite" Content="Choix des activités" Grid.Column="2" HorizontalAlignment="Left" Margin="534,178,0,0" VerticalAlignment="Top" Width="133" FontFamily="Arial" FontWeight="Bold" FontStyle="Italic" FontSize="12" Height="22"/>
         <Label x:Name="lblChoixActivite_Copy" Content="Nom de l'activité :" Grid.Column="2" HorizontalAlignment="Left" Margin="461,282,0,0" VerticalAlignment="Top" Width="133" FontFamily="Arial" FontWeight="Bold" FontSize="12" Height="22"/>
         <Label x:Name="lblChoixActivite_Copy1" Content="Jour :" Grid.Column="2" HorizontalAlignment="Left" Margin="461,320,0,0" VerticalAlignment="Top" Width="133" FontFamily="Arial" FontWeight="Bold" FontSize="12" Height="22"/>
         <Label x:Name="lblChoixActivite_Copy2" Content="Horaires :" Grid.Column="2" HorizontalAlignment="Left" Margin="461,362,0,0" VerticalAlignment="Top" Width="133" FontFamily="Arial" FontWeight="Bold" FontSize="12" Height="22"/>
-        <ComboBox x:Name="comboBox" Grid.Column="2" HorizontalAlignment="Left" Margin="583,282,0,0" VerticalAlignment="Top" Width="170"/>
-        <ComboBox x:Name="comboBox_Copy" Grid.Column="2" HorizontalAlignment="Left" Margin="583,322,0,0" VerticalAlignment="Top" Width="170"/>
-        <ComboBox x:Name="comboBox_Copy1" Grid.Column="2" HorizontalAlignment="Left" Margin="583,362,0,0" VerticalAlignment="Top" Width="170"/>
+        <ComboBox x:Name="cboxNomActivite" Grid.Column="2" HorizontalAlignment="Left" Margin="583,282,0,0" VerticalAlignment="Top" Width="170">
+            <ComboBoxItem Content="Atelier Arts"/>
+            <ComboBoxItem Content="Atelier Cuisine"/>
+            <ComboBoxItem Content="Atelier Espagnole"/>
+            <ComboBoxItem Content="Atelier Fitness"/>
+            <ComboBoxItem Content="Atelier Jeux de société"/>
+            <ComboBoxItem Content="Atelier Foot"/>
+        </ComboBox>
+        <ComboBox x:Name="cboxJourInscription" Grid.Column="2" HorizontalAlignment="Left" Margin="583,322,0,0" VerticalAlignment="Top" Width="170">
+            <ComboBoxItem Content="Mardi"/>
+            <ComboBoxItem Content="Mercredi"/>
+            <ComboBoxItem Content="Jeudi"/>
+            <ComboBoxItem Content="Vendredi"/>
+            <ComboBoxItem Content="Samedi"/>
+        </ComboBox>
+        <ComboBox x:Name="cbHoraires" Grid.Column="2" HorizontalAlignment="Left" Margin="583,362,0,0" VerticalAlignment="Top" Width="170">
+            <ComboBoxItem Content="8h-10h"/>
+            <ComboBoxItem Content="10h-12h"/>
+            <ComboBoxItem Content="12h-14h"/>
+            <ComboBoxItem Content="14h-16h"/>
+            <ComboBoxItem Content="16h-18h"/>
+        </ComboBox>
         <Button x:Name="btnValider" Content="Valider" Grid.Column="2" HorizontalAlignment="Left" Margin="324,430,0,0" VerticalAlignment="Top" Width="75" Background="#7CD175"/>
         <Button x:Name="btnModifier" Content="Modifier" Grid.Column="2" HorizontalAlignment="Left" Margin="424,430,0,0" VerticalAlignment="Top" Width="75" Background="#FA7470"/>
     </Grid>

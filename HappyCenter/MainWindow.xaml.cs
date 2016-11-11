@@ -22,15 +22,9 @@ namespace HappyCenter
     {
         public MainWindow()
         {
-            HappyCenter.View.VoirContact vc = new View.VoirContact();
-            HappyCenter.View.VoirPlannification vp = new View.VoirPlannification();
-            HappyCenter.View.VoirDesinscription vd = new View.VoirDesinscription();
-            HappyCenter.View.VoirInscription vi = new View.VoirInscription();
+            HappyCenter.View.VoirAccueil va = new View.VoirAccueil();
             InitializeComponent();
-            vc.Show();
-            vp.Show();
-            vd.Show();
-            vi.Show();
+            va.Show();
 
         }
     }

@@ -1,0 +1,23 @@
+﻿<Window x:Class="HappyCenter.View.VoirChat"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HappyCenter.View"
+        mc:Ignorable="d"
+        Title="VoirChat" Height="510" Width="800">
+    <Grid Background="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}" Margin="-135,0,-55,0">
+        <Label x:Name="label" Content="   &#x9;&#x9;&#x9;&#x9;BIENVENUE CHEZ HAPPY CENTER" HorizontalAlignment="Left" Margin="162,10,0,0" VerticalAlignment="Top" Width="752" Height="36" FontFamily="Segoe Print" FontSize="16"/>
+        <Menu x:Name="menu1" HorizontalAlignment="Left" Height="21" Margin="313,63,0,0" VerticalAlignment="Top" Width="525" Background="#FAD1A9">
+            <MenuItem Header="Accueil" Width="105" FontWeight="Bold" FontFamily="Arial" Height="21" Click="MenuItem_Accueil_Click"/>
+            <MenuItem Header="Informations" Width="113" FontWeight="Bold" FontFamily="Arial" Click="MenuItem_Informations_Click" />
+            <MenuItem Header="Mon Planning" Width="113" FontWeight="Bold" FontFamily="Arial" Click="MenuItem_Mon_Planning_Click"/>
+            <MenuItem Header="Contact" Width="99" FontWeight="Bold" FontFamily="Arial" Click="MenuItem_Contact_Click"/>
+            <MenuItem Header="Chat" Width="92" FontWeight="Bold" FontFamily="Arial"/>
+        </Menu>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="295" Margin="162,109,0,0" VerticalAlignment="Top" Width="752"/>
+        <Button x:Name="button" Content="Envoyer" HorizontalAlignment="Left" Margin="839,424,0,0" VerticalAlignment="Top" Width="75" Height="26"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="26" Margin="162,424,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="660"/>
+
+    </Grid>
+</Window>

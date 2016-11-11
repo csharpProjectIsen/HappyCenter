@@ -19,7 +19,7 @@
           HorizontalAlignment="Right" 
           Name="plannings" 
           VerticalAlignment="Top" 
-          Width="548" Margin="0,109,112,0" Grid.Column="2">
+          Width="548" Margin="0,109,112,0" Grid.Column="2" SelectionChanged="plannings_SelectionChanged">
             <DataGrid.Columns >
                 <DataGridTextColumn Binding="{Binding Path=A}" MinWidth="90"  />
                 <DataGridTextColumn Binding="{Binding Path=B}" MinWidth="90" />
@@ -30,13 +30,12 @@
             </DataGrid.Columns>
         </DataGrid>
         <Menu x:Name="menu1" Grid.Column="2" HorizontalAlignment="Left" Height="21" Margin="183,63,0,0" VerticalAlignment="Top" Width="525" Background="#FAD1A9">
-            <MenuItem Header="Accueil" Width="105" FontWeight="Bold" FontFamily="Arial" Height="21"/>
-            <MenuItem Header="Informations" Width="113" FontWeight="Bold" FontFamily="Arial" />
+            <MenuItem Header="Accueil" Width="105" FontWeight="Bold" FontFamily="Arial" Height="21" Click="MenuItem_Accueil_Click"/>
+            <MenuItem Header="Informations" Width="113" FontWeight="Bold" FontFamily="Arial" Click="MenuItem_Informations_Click" />
             <MenuItem Header="Mon Planning" Width="113" FontWeight="Bold" FontFamily="Arial"/>
-            <MenuItem Header="Contact" Width="99" FontWeight="Bold" FontFamily="Arial"/>
-            <MenuItem Header="Chat" Width="92" FontWeight="Bold" FontFamily="Arial"/>
+            <MenuItem Header="Contact" Width="99" FontWeight="Bold" FontFamily="Arial" Click="MenuItem_Contact_Click"/>
+            <MenuItem Header="Chat" Width="92" FontWeight="Bold" FontFamily="Arial" Click="MenuItem_Chat_Click"/>
         </Menu>
         <Button x:Name="btnDesinscription" Content="Désinscription" Grid.Column="2" HorizontalAlignment="Left" Margin="675,412,0,0" VerticalAlignment="Top" Width="86" Background="#BDD387" Height="28"/>
-
     </Grid>
 </Window>

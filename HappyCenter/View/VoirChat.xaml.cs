@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace HappyCenter.View
 {
     /// <summary>
-    /// Interaction logic for VoirContact.xaml
+    /// Interaction logic for VoirChat.xaml
     /// </summary>
-    public partial class VoirContact : Window
+    public partial class VoirChat : Window
     {
-        public VoirContact()
+        public VoirChat()
         {
             InitializeComponent();
         }
@@ -31,10 +31,10 @@ namespace HappyCenter.View
             this.Close();
         }
 
-        private void MenuItem_Chat_Click(object sender, RoutedEventArgs e)
+        private void MenuItem_Informations_Click(object sender, RoutedEventArgs e)
         {
-            VoirChat chat = new VoirChat();
-            chat.Show();
+            VoirInformations informations = new VoirInformations();
+            informations.Show();
             this.Close();
         }
 
@@ -42,13 +42,6 @@ namespace HappyCenter.View
         {
             VoirPlannification monPlanning = new VoirPlannification();
             monPlanning.Show();
-            this.Close();
-        }
-
-        private void MenuItem_Informations_Click(object sender, RoutedEventArgs e)
-        {
-            VoirInformations informations = new VoirInformations();
-            informations.Show();
             this.Close();
         }
 

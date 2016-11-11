@@ -55,12 +55,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="View\VoirAccueil.xaml.cs" />
+    <Compile Include="View\VoirActiviteArts.xaml.cs" />
+    <Compile Include="View\VoirActiviteCuisine.xaml.cs" />
+    <Compile Include="View\VoirActiviteEspagnol.xaml.cs" />
+    <Compile Include="View\VoirActiviteFitness.xaml.cs" />
+    <Compile Include="View\VoirActiviteFoot.xaml.cs" />
+    <Compile Include="View\VoirActiviteJeuxSociete.xaml.cs" />
+    <Compile Include="View\VoirChat.xaml.cs">
+      <DependentUpon>VoirChat.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\VoirContact.xaml.cs">
       <DependentUpon>VoirContact.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\VoirDesinscription.xaml.cs">
       <DependentUpon>VoirDesinscription.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\VoirInformations.xaml.cs" />
     <Compile Include="View\VoirInscription.xaml.cs">
       <DependentUpon>VoirInscription.xaml</DependentUpon>
     </Compile>
@@ -79,6 +90,38 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="View\VoirAccueil.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\VoirActiviteArts.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\VoirActiviteCuisine.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\VoirActiviteEspagnol.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\VoirActiviteFitness.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\VoirActiviteFoot.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\VoirActiviteJeuxSociete.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\VoirChat.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\VoirContact.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -86,6 +129,10 @@
     <Page Include="View\VoirDesinscription.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\VoirInformations.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="View\VoirInscription.xaml">
       <SubType>Designer</SubType>
