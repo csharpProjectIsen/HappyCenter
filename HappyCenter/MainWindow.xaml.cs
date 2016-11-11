@@ -21,12 +21,13 @@ namespace HappyCenter
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
             HappyCenter.View.VoirAccueil va = new View.VoirAccueil();
             HappyCenter.View.VoirInformations vi = new View.VoirInformations();
-            HappyCenter.View.VoirActivite vac = new View.VoirActivite();
+            //HappyCenter.View.VoirActivite vac = new View.VoirActivite();
             va.Show();
             vi.Show();
             //vac.Show();

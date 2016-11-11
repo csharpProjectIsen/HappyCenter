@@ -22,7 +22,7 @@
       <Column Name="Heure_Fin" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
       <Column Name="Age_Min" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Age_Max" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Photo" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Photo" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
       <Column Name="Etat" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="Id_Personne" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Association Name="Activites_Utilisateurs" Member="Utilisateurs" ThisKey="Id" OtherKey="Id_Activite" Type="Utilisateurs" />

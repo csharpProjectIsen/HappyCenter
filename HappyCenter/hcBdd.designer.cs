@@ -563,7 +563,7 @@ namespace HappyCenter
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Photo", DbType="NVarChar(MAX) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Photo", DbType="VarChar(MAX) NOT NULL", CanBeNull=false)]
 		public string Photo
 		{
 			get
