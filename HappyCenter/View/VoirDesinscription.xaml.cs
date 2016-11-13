@@ -109,7 +109,7 @@ namespace HappyCenter.View
 
         private void btnDesinscriptionJeuxDeSociete_Click(object sender, RoutedEventArgs e)
         {
-            if (cboxDesinscriptionJeuxDeSociete.Text == "")
+            if (cboxDesinscriptionJeuxDeSociete.Text == "") 
             {
                 MessageBox.Show("Veuillez sélectionner un jour !");
             }
@@ -121,7 +121,7 @@ namespace HappyCenter.View
 
         private void btnDesinscriptionFitness_Click(object sender, RoutedEventArgs e)
         {
-            if (cboxDesinscriptionFitness.Text == "")
+            if (cboxDesinscriptionFitness.Text == "") 
             {
                 MessageBox.Show("Veuillez sélectionner un jour !");
             }
