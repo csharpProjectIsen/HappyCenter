@@ -35,33 +35,33 @@
         <Label x:Name="lblJour4" Content="jour :&#xA;" Grid.Column="2" HorizontalAlignment="Left" Margin="522,154,0,0" VerticalAlignment="Top" Height="28" Width="42" RenderTransformOrigin="0.476,0.417"/>
         <Label x:Name="lblJour5" Content="jour :&#xA;" Grid.Column="2" HorizontalAlignment="Left" Margin="527,248,0,0" VerticalAlignment="Top" Height="28" Width="42" RenderTransformOrigin="0.405,2.143"/>
         <Label x:Name="lblJour6" Content="jour :&#xA;" Grid.Column="2" HorizontalAlignment="Left" Margin="527,334,0,0" VerticalAlignment="Top" Height="28" Width="42" RenderTransformOrigin="0.476,0.417"/>
-        <ComboBox x:Name="cboxDesinscription1" Grid.Column="2" HorizontalAlignment="Left" Margin="210,156,0,0" VerticalAlignment="Top" Width="80">
+        <ComboBox x:Name="cboxDesinscriptionArts" Grid.Column="2" HorizontalAlignment="Left" Margin="210,156,0,0" VerticalAlignment="Top" Width="80">
             <ComboBoxItem Content="Mercredi"/>
             <ComboBoxItem Content="Vendredi"/>
         </ComboBox>
-        <ComboBox x:Name="cboxDesinscription2" Grid.Column="2" HorizontalAlignment="Left" Margin="210,247,0,0" VerticalAlignment="Top" Width="80">
+        <ComboBox x:Name="cboxDesinscriptionCuisine" Grid.Column="2" HorizontalAlignment="Left" Margin="210,247,0,0" VerticalAlignment="Top" Width="80">
             <ComboBoxItem Content="Mardi"/>
         </ComboBox>
-        <ComboBox x:Name="cboxDesinscription3" Grid.Column="2" HorizontalAlignment="Left" Margin="210,337,0,0" VerticalAlignment="Top" Width="80">
+        <ComboBox x:Name="cboxDesinscriptionEspagnole" Grid.Column="2" HorizontalAlignment="Left" Margin="210,337,0,0" VerticalAlignment="Top" Width="80">
             <ComboBoxItem Content="Jeudi"/>
         </ComboBox>
-        <ComboBox x:Name="cboxDesinscription4" Grid.Column="2" HorizontalAlignment="Left" Margin="564,156,0,0" VerticalAlignment="Top" Width="80">
+        <ComboBox x:Name="cboxDesinscriptionFootball" Grid.Column="2" HorizontalAlignment="Left" Margin="564,156,0,0" VerticalAlignment="Top" Width="80">
             <ComboBoxItem Content="Jeudi"/>
             <ComboBoxItem Content="Vendredi"/>
         </ComboBox>
-        <ComboBox x:Name="cboxDesinscription5" Grid.Column="2" HorizontalAlignment="Left" Margin="564,251,0,0" VerticalAlignment="Top" Width="80">
+        <ComboBox x:Name="cboxDesinscriptionJeuxDeSociete" Grid.Column="2" HorizontalAlignment="Left" Margin="564,251,0,0" VerticalAlignment="Top" Width="80">
             <ComboBoxItem Content="Mardi"/>
             <ComboBoxItem Content="Samedi"/>
         </ComboBox>
-        <ComboBox x:Name="cboxDesinscription6" Grid.Column="2" HorizontalAlignment="Left" Margin="564,337,0,0" VerticalAlignment="Top" Width="80">
+        <ComboBox x:Name="cboxDesinscriptionFitness" Grid.Column="2" HorizontalAlignment="Left" Margin="564,337,0,0" VerticalAlignment="Top" Width="80">
             <ComboBoxItem Content="Mercredi"/>
             <ComboBoxItem Content="Samedi"/>
         </ComboBox>
-        <Button x:Name="button" Content="Désinscription" Grid.Column="2" HorizontalAlignment="Left" Margin="315,157,0,0" VerticalAlignment="Top" Width="80" Background="#FFFA7470"/>
-        <Button x:Name="button_Copy" Content="Désinscription" Grid.Column="2" HorizontalAlignment="Left" Margin="315,247,0,0" VerticalAlignment="Top" Width="80" Background="#FFFA7470" RenderTransformOrigin="-0.062,0.4"/>
-        <Button x:Name="button_Copy1" Content="Désinscription" Grid.Column="2" HorizontalAlignment="Left" Margin="315,339,0,0" VerticalAlignment="Top" Width="80" Background="#FFFA7470"/>
-        <Button x:Name="button_Copy2" Content="Désinscription" Grid.Column="2" HorizontalAlignment="Left" Margin="660,156,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="1.462,0.45" Background="#FFFA7470"/>
-        <Button x:Name="button_Copy3" Content="Désinscription" Grid.Column="2" HorizontalAlignment="Left" Margin="660,251,0,0" VerticalAlignment="Top" Width="80" Background="#FFFA7470"/>
-        <Button x:Name="button_Copy4" Content="Désinscription" Grid.Column="2" HorizontalAlignment="Left" Margin="660,337,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.488,0.15" Background="#FFFA7470"/>
+        <Button x:Name="btnDesinscriptionArts" Content="Désinscription" Grid.Column="2" HorizontalAlignment="Left" Margin="315,157,0,0" VerticalAlignment="Top" Width="80" Background="#FFFA7470" Click="btnDesinscriptionArts_Click"/>
+        <Button x:Name="btnDesinscriptionCuisine" Content="Désinscription" Grid.Column="2" HorizontalAlignment="Left" Margin="315,247,0,0" VerticalAlignment="Top" Width="80" Background="#FFFA7470" RenderTransformOrigin="-0.062,0.4" Click="btnDesinscriptionCuisine_Click"/>
+        <Button x:Name="btnDesinscriptionArtsEspagnole" Content="Désinscription" Grid.Column="2" HorizontalAlignment="Left" Margin="315,339,0,0" VerticalAlignment="Top" Width="80" Background="#FFFA7470" Click="btnDesinscriptionArtsEspagnole_Click"/>
+        <Button x:Name="btnDesinscriptionFootball" Content="Désinscription" Grid.Column="2" HorizontalAlignment="Left" Margin="660,156,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="1.462,0.45" Background="#FFFA7470" Click="btnDesinscriptionFootball_Click"/>
+        <Button x:Name="btnDesinscriptionJeuxDeSociete" Content="Désinscription" Grid.Column="2" HorizontalAlignment="Left" Margin="660,251,0,0" VerticalAlignment="Top" Width="80" Background="#FFFA7470" Click="btnDesinscriptionJeuxDeSociete_Click"/>
+        <Button x:Name="btnDesinscriptionFitness" Content="Désinscription" Grid.Column="2" HorizontalAlignment="Left" Margin="660,337,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.488,0.15" Background="#FFFA7470" Click="btnDesinscriptionFitness_Click"/>
     </Grid>
 </Window>

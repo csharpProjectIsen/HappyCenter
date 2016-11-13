@@ -15,9 +15,11 @@
             <MenuItem Header="Contact" Width="99" FontWeight="Bold" FontFamily="Arial" Click="MenuItem_Contact_Click"/>
             <MenuItem Header="Chat" Width="92" FontWeight="Bold" FontFamily="Arial"/>
         </Menu>
-        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="295" Margin="162,109,0,0" VerticalAlignment="Top" Width="752"/>
-        <Button x:Name="button" Content="Envoyer" HorizontalAlignment="Left" Margin="839,424,0,0" VerticalAlignment="Top" Width="75" Height="26"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="26" Margin="162,424,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="660"/>
+        <ListBox x:Name="listMessage" HorizontalAlignment="Left" Height="295" Margin="162,109,0,0" VerticalAlignment="Top" Width="752" FontFamily="Arial" FontSize="13" FontWeight="Bold"/>
+        <Button x:Name="button_Envoyer" Content="Envoyer" HorizontalAlignment="Left" Margin="839,424,0,0" VerticalAlignment="Top" Width="75" Height="26" Click="button_Envoyer_Click" Background="Yellow"/>
+        <TextBox x:Name="textMessage" HorizontalAlignment="Left" Height="26" Margin="162,424,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="660" FontFamily="Arial" FontSize="13"/>
+        <Button x:Name="btnConnexion" Content="Connexion" HorizontalAlignment="Left" Margin="843,84,0,0" VerticalAlignment="Top" Width="71" Click="btnConnexion_Click" Background="#7CD175"/>
+        <Label x:Name="PoserQuestion" Content="Vous pouvez nous poser toutes vos questions ici" HorizontalAlignment="Left" Margin="162,84,0,0" VerticalAlignment="Top" Width="314" FontFamily="Arial" FontSize="14" Foreground="Red"/>
 
     </Grid>
 </Window>

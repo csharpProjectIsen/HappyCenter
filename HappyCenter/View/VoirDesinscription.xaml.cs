@@ -59,6 +59,76 @@ namespace HappyCenter.View
             this.Close();
         }
 
+        private void btnDesinscriptionArts_Click(object sender, RoutedEventArgs e)
+        {
+            if (cboxDesinscriptionArts.Text =="")
+            {
+                MessageBox.Show("Veuillez sélectionner un jour !");
+            }
+            else
+            {
+                MessageBox.Show("Désinscription à l'Atelier Arts du " + cboxDesinscriptionArts.Text + " réussie !");
+            }
+        }
 
+        private void btnDesinscriptionCuisine_Click(object sender, RoutedEventArgs e)
+        {
+            if (cboxDesinscriptionCuisine.Text == "")
+            {
+                MessageBox.Show("Veuillez sélectionner un jour !");
+            }
+            else
+            {
+                MessageBox.Show("Désinscription à l'Atelier Cuisine du " + cboxDesinscriptionCuisine.Text + " réussie !");
+            }
+        }
+
+        private void btnDesinscriptionArtsEspagnole_Click(object sender, RoutedEventArgs e)
+        {
+            if (cboxDesinscriptionEspagnole.Text == "")
+            {
+                MessageBox.Show("Veuillez sélectionner un jour !");
+            }
+            else
+            {
+                MessageBox.Show("Désinscription à l'Atelier Espagnole du " + cboxDesinscriptionEspagnole.Text + " réussie !");
+            }
+        }
+
+        private void btnDesinscriptionFootball_Click(object sender, RoutedEventArgs e)
+        {
+            if (cboxDesinscriptionFootball.Text == "")
+            {
+                MessageBox.Show("Veuillez sélectionner un jour !");
+            }
+            else
+            {
+                MessageBox.Show("Désinscription à l'Atelier Football du " + cboxDesinscriptionFootball.Text + " réussie !");
+            }
+        }
+
+        private void btnDesinscriptionJeuxDeSociete_Click(object sender, RoutedEventArgs e)
+        {
+            if (cboxDesinscriptionJeuxDeSociete.Text == "")
+            {
+                MessageBox.Show("Veuillez sélectionner un jour !");
+            }
+            else
+            {
+                MessageBox.Show("Désinscription à l'Atelier Jeux de Société du " + cboxDesinscriptionJeuxDeSociete.Text + " réussie !");
+            }
+        }
+
+        private void btnDesinscriptionFitness_Click(object sender, RoutedEventArgs e)
+        {
+            if (cboxDesinscriptionFitness.Text == "")
+            {
+                MessageBox.Show("Veuillez sélectionner un jour !");
+            }
+            else
+            {
+                MessageBox.Show("Désinscription à l'Atelier Fitness du " + cboxDesinscriptionFitness.Text + " réussie !");
+            }
+        }
     }
 }

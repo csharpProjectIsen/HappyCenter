@@ -59,6 +59,31 @@ namespace HappyCenter.View
             this.Close();
         }
 
+        private void btnValider_Click(object sender, RoutedEventArgs e)
+        {
+            if (tboxName.Text == "" || tboxPrenom.Text == "" || tboxAge.Text == "" || cboxNomActivite.Text == "" || cboxJourInscription.Text == "" || cboxHoraires.Text == "")
+            {
+                             
+                MessageBox.Show("Veuillez remplir tous les champs !");
+            }
+            else
+            {
+                MessageBox.Show("Inscription enregistrée !");
+            }
+        }
 
+        private void btnModifier_Click(object sender, RoutedEventArgs e)
+        {
+
+            if (tboxName.Text == "" || tboxPrenom.Text == "" || tboxAge.Text == "" || cboxNomActivite.Text=="" || cboxJourInscription.Text=="" || cboxHoraires.Text=="" )
+            {
+
+                MessageBox.Show("Veuillez remplir tous les champs !");
+            }
+            else
+            {
+                MessageBox.Show("Modification enregistrée !");
+            }
+        }
     }
 }

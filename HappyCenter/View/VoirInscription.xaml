@@ -52,14 +52,31 @@
             <ComboBoxItem Content="Vendredi"/>
             <ComboBoxItem Content="Samedi"/>
         </ComboBox>
-        <ComboBox x:Name="cbHoraires" Grid.Column="2" HorizontalAlignment="Left" Margin="583,362,0,0" VerticalAlignment="Top" Width="170">
-            <ComboBoxItem Content="8h-10h"/>
-            <ComboBoxItem Content="10h-12h"/>
-            <ComboBoxItem Content="12h-14h"/>
-            <ComboBoxItem Content="14h-16h"/>
-            <ComboBoxItem Content="16h-18h"/>
+        <ComboBox x:Name="cboxHoraires" Grid.Column="2" HorizontalAlignment="Left" Margin="583,362,0,0" VerticalAlignment="Top" Width="170">
+            <ComboBoxItem Content="8h - 10h"/>
+            <ComboBoxItem Content="10h - 12h"/>
+            <ComboBoxItem Content="12h - 14h"/>
+            <ComboBoxItem Content="14h - 16h"/>
+            <ComboBoxItem Content="16h - 18h"/>
         </ComboBox>
-        <Button x:Name="btnValider" Content="Valider" Grid.Column="2" HorizontalAlignment="Left" Margin="324,430,0,0" VerticalAlignment="Top" Width="75" Background="#7CD175"/>
-        <Button x:Name="btnModifier" Content="Modifier" Grid.Column="2" HorizontalAlignment="Left" Margin="424,430,0,0" VerticalAlignment="Top" Width="75" Background="#FA7470"/>
+        <Button x:Name="btnValider" Content="Valider" Grid.Column="2" HorizontalAlignment="Left" Margin="324,430,0,0" VerticalAlignment="Top" Width="75" Background="#7CD175" Click="btnValider_Click"/>
+        <Button x:Name="btnModifier" Content="Modifier" Grid.Column="2" HorizontalAlignment="Left" Margin="424,430,0,0" VerticalAlignment="Top" Width="75" Background="#FA7470" Click="btnModifier_Click"/>
+        <Label x:Name="label1" Content="*" Grid.Column="2" HorizontalAlignment="Left" Margin="113,264,0,0" VerticalAlignment="Top" Width="16" Height="23" Foreground="Red"/>
+        <Label x:Name="label1_Copy" Content="*" Grid.Column="2" HorizontalAlignment="Left" Margin="127,305,0,0" VerticalAlignment="Top" Width="16" Height="23" RenderTransformOrigin="0.562,1.913" Foreground="Red"/>
+        <Label x:Name="label1_Copy1" Content="*" Grid.Column="2" HorizontalAlignment="Left" Margin="112,347,0,0" VerticalAlignment="Top" Width="16" Height="23" RenderTransformOrigin="0.25,0.304" Foreground="Red"/>
+        <Label x:Name="label1_Copy2" Content="*" Grid.Column="2" HorizontalAlignment="Left" Margin="567,269,0,0" VerticalAlignment="Top" Width="16" Height="23" Foreground="Red"/>
+        <Label x:Name="label1_Copy3" Content="*" Grid.Column="2" HorizontalAlignment="Left" Margin="507,310,0,0" VerticalAlignment="Top" Width="16" Height="23" Foreground="Red"/>
+        <Label x:Name="label1_Copy4" Content="*" Grid.Column="2" HorizontalAlignment="Left" Margin="525,352,0,0" VerticalAlignment="Top" Width="16" Height="23" Foreground="Red"/>
+        <Label x:Name="label2" Content="*" Grid.Column="2" HorizontalAlignment="Left" Margin="48,430,0,0" VerticalAlignment="Top" Width="20" Height="20" Foreground="Red"/>
+        <Label x:Name="label3" Content="Champs Obligatoires" Grid.Column="2" HorizontalAlignment="Left" Margin="66,430,0,0" VerticalAlignment="Top" Width="160" RenderTransformOrigin="0.5,0.5" FontFamily="Arial">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.076"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
     </Grid>
 </Window>
