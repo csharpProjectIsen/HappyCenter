@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="hcbdd" Class="hcDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\hcbdd.mdf;Integrated Security=True" SettingsObjectName="HappyCenter.Properties.Settings" SettingsPropertyName="hcbddConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Activites" Member="Activites">
+    <Type Name="Activites">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="heure_debut" Type="System.TimeSpan" DbType="Time NOT NULL" CanBeNull="false" />
+      <Column Name="heure_fin" Type="System.TimeSpan" DbType="Time NOT NULL" CanBeNull="false" />
+      <Column Name="effectif_maximal" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="nom_moniteur" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="photo" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="jour" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Association Name="Activites_Clients" Member="Clients1" ThisKey="Id" OtherKey="Id" Type="Clients" Cardinality="One" />
+      <Association Name="Clients_Activites" Member="Clients" ThisKey="Id" OtherKey="Id" Type="Clients" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Clients" Member="Clients">
+    <Type Name="Clients">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Surname" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Age" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nom_activite" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Jour_activite" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Horaires_activite" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Clients_Activites" Member="Activites" ThisKey="Id" OtherKey="Id" Type="Activites" Cardinality="One" />
+      <Association Name="Activites_Clients" Member="Activites1" ThisKey="Id" OtherKey="Id" Type="Activites" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

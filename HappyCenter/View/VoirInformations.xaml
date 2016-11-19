@@ -9,11 +9,11 @@
     <Grid Background="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}">
         <Label x:Name="label" Content="BIENVENUE CHEZ HAPPY CENTER" HorizontalAlignment="Left" Margin="251,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.078,-2.707" FontFamily="Segoe Print" FontSize="16"/>
         <Menu x:Name="menu" HorizontalAlignment="Left" Height="23" Margin="139,61,0,0" VerticalAlignment="Top" Width="532" Background="#FAD1A9">
-            <MenuItem Header="_Accueil" Width="96" FontWeight="Bold" FontFamily="Arial" Height="23"/>
+            <MenuItem Header="_Accueil" Width="96" FontWeight="Bold" FontFamily="Arial" Height="23" Click="MenuItem_Accueil_Click"/>
             <MenuItem Header="_Informations" Width="127" FontWeight="Bold" FontFamily="Arial"/>
-            <MenuItem Header="_Mon Planning" Width="114" FontWeight="Bold" FontFamily="Arial"/>
-            <MenuItem Header="_Contact" Width="90" FontWeight="Bold" FontFamily="Arial"/>
-            <MenuItem Header="_Chat" Width="105" FontWeight="Bold" FontFamily="Arial" />
+            <MenuItem Header="_Mon Planning" Width="114" FontWeight="Bold" FontFamily="Arial" Click="MenuItem_Mon_Planning_Click"/>
+            <MenuItem Header="_Contact" Width="90" FontWeight="Bold" FontFamily="Arial" Click="MenuItem_Contact_Click"/>
+            <MenuItem Header="_Chat" Width="105" FontWeight="Bold" FontFamily="Arial" Click="MenuItem_Chat_Click"/>
         </Menu>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="158,118,0,0" Height="168" Width="496" Background="White" FontFamily="Arial"><Run FontWeight="Bold" Text="Happy Center "/><Run Text="est un centre aéré situé en plein cœur de Lille "/><Run Text=". "/><LineBreak/><Run/><LineBreak/><Run Text="Chez "/><Run FontWeight="Bold" Text="Happy Center"/><Run Text=", des animateurs souriants et à l'écoute vous apprennent à cuisiner de petits plats simples et équilibrés dans l'atelier "/><Run FontWeight="Bold" Text="Cuisine "/><Run Text="et les bases de l'espagnol avec l'atelier "/><Run FontWeight="Bold" Text="Espagnol"/><Run Text=". "/><Run/><LineBreak/><Run Text="Vous p"/><Run Text="ouvez également participer à des matchs amicaux avec l'atelier "/><Run FontWeight="Bold" Text="Foot "/><Run Text="et vous exercer pour reprendre la forme ou la maintenir dans notre atelier"/><Run FontWeight="Bold" Text=" Fitness"/><Run Text="."/><LineBreak/><Run Text="Exprimez votre imagination dans l'atelier"/><Run FontWeight="Bold" Text=" Arts "/><Run Text="ou venez passer un moment conviviale dans notre atelier "/><Run FontWeight="Bold" Text="Jeux de sociétés"/><Run Text="."/><LineBreak/><Run/><LineBreak/><Run FontWeight="Bold" Text="Happy Center, restez HAPPY ^^ "/></TextBlock>
 

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,12 +20,12 @@ namespace HappyCenter
     /// </summary>
     public partial class MainWindow : Window
     {
-
         public MainWindow()
         {
-            InitializeComponent();
             HappyCenter.View.VoirAccueil va = new View.VoirAccueil();
+            InitializeComponent();
             va.Show();
+
         }
     }
 }

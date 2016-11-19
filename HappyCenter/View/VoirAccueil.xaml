@@ -25,7 +25,7 @@
                 <DataGridTextColumn Binding="{Binding Path=F}" MinWidth="90" />
             </DataGrid.Columns>
         </DataGrid>
-        <Rectangle HorizontalAlignment="Left" Height="369" Margin="10,102,0,0" VerticalAlignment="Top" Width="194" Fill="White"/>
+        <Rectangle HorizontalAlignment="Left" Height="350" Margin="10,102,0,0" VerticalAlignment="Top" Width="194" Fill="White"/>
         <Label Name="ListeActivites" Content="Liste des activités" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="46,107,0,0" FontFamily="Arial" Height="29" Width="119" FontWeight="Bold"/>
         <Label x:Name="atelierCuisine" Content="Atelier Cuisine" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="72,153,0,0" Width="105" FontFamily="Arial" FontSize="11" Height="22" FontWeight="Bold"/>
         <Label x:Name="atelierArts" Content="Atelier Arts" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="72,195,0,0" FontSize="11" Width="105" FontFamily="Arial" Height="21" RenderTransformOrigin="0.448,0.34" FontWeight="Bold"/>
@@ -36,10 +36,10 @@
         
         <Menu x:Name="menu" HorizontalAlignment="Left" Height="23" Margin="139,61,0,0" VerticalAlignment="Top" Width="532" Background="#FAD1A9">
             <MenuItem Header="_Accueil" Width="96" FontWeight="Bold" FontFamily="Arial" Height="23"/>
-            <MenuItem Header="_Informations" Width="127" FontWeight="Bold" FontFamily="Arial"/>
-            <MenuItem Header="_Mon Planning" Width="114" FontWeight="Bold" FontFamily="Arial"/>
-            <MenuItem Header="_Contact" Width="90" FontWeight="Bold" FontFamily="Arial"/>
-            <MenuItem Header="_Chat" Width="105" FontWeight="Bold" FontFamily="Arial" />
+            <MenuItem Header="_Informations" Width="127" FontWeight="Bold" FontFamily="Arial" Click="MenuItem_Informations_Click"/>
+            <MenuItem Header="_Mon Planning" Width="114" FontWeight="Bold" FontFamily="Arial" Click="MenuItem_Mon_Planning_Click"/>
+            <MenuItem Header="_Contact" Width="90" FontWeight="Bold" FontFamily="Arial" Click="MenuItem_Contact_Click"/>
+            <MenuItem Header="_Chat" Width="105" FontWeight="Bold" FontFamily="Arial" Click="MenuItem_Chat_Click"/>
         </Menu>
         <Button x:Name="btn_cuisine" HorizontalAlignment="Left" Margin="16,153,0,0" VerticalAlignment="Top" Width="46" Click="btn_cuisine_Click">
             <Button.Template>
@@ -73,7 +73,7 @@
                 <Image x:Name="img_espagnol" Source="/ressources/esp.png"/>
             </StackPanel>
         </Button>
-        <Button x:Name="btn_sinscrire"  Content="S'inscrire" HorizontalAlignment="Left" Margin="99,438,0,0" VerticalAlignment="Top" Width="50" Height="23" Click="button_Click" Background="Yellow"/>  
+        <Button x:Name="btn_sinscrire"  Content="S'inscrire" HorizontalAlignment="Left" Margin="99,424,0,0" VerticalAlignment="Top" Width="50" Height="23" Click="button_Accueil_Inscrire_Click" Background="Yellow"/>  
 
     </Grid>
 

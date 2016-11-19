@@ -26,11 +26,11 @@ namespace HappyCenter.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\happyCenterBd" +
-            "d.mdf;Integrated Security=True")]
-        public string happyCenterBddConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\hcbdd.mdf;Int" +
+            "egrated Security=True")]
+        public string hcbddConnectionString {
             get {
-                return ((string)(this["happyCenterBddConnectionString"]));
+                return ((string)(this["hcbddConnectionString"]));
             }
         }
     }

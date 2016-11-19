@@ -1,0 +1,44 @@
+﻿<Window x:Class="HappyCenter.View.VoirPlannification"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HappyCenter.View"
+        mc:Ignorable="d"
+        Title="VoirPlannification" Height="510" Width="800">
+    <Grid Background="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}" Margin="-135,0,-55,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="129*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="852*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="label" Content="   &#x9;&#x9;&#x9;&#x9;BIENVENUE CHEZ HAPPY CENTER" HorizontalAlignment="Left" Margin="32,10,0,0" VerticalAlignment="Top" Width="752" Height="36" FontFamily="Segoe Print" Grid.Column="2" FontSize="16"/>
+
+        <DataGrid AutoGenerateColumns="False" 
+          Height="255" 
+          HorizontalAlignment="Right" 
+          Name="plannings" 
+          VerticalAlignment="Top" 
+          Width="548" Margin="0,109,112,0" Grid.Column="2" SelectionChanged="plannings_SelectionChanged">
+            <DataGrid.Columns >
+                <DataGridTextColumn Binding="{Binding Path=A}" MinWidth="90"  />
+                <DataGridTextColumn Binding="{Binding Path=B}" MinWidth="90" />
+                <DataGridTextColumn Binding="{Binding Path=C}" MinWidth="90" />
+                <DataGridTextColumn Binding="{Binding Path=D}" MinWidth="90" />
+                <DataGridTextColumn Binding="{Binding Path=E}" MinWidth="90" />
+                <DataGridTextColumn Binding="{Binding Path=F}" MinWidth="90" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Menu x:Name="menu1" Grid.Column="2" HorizontalAlignment="Left" Height="21" Margin="183,63,0,0" VerticalAlignment="Top" Width="525" Background="#FAD1A9">
+            <MenuItem Header="Accueil" Width="105" FontWeight="Bold" FontFamily="Arial" Height="21" Click="MenuItem_Accueil_Click"/>
+            <MenuItem Header="Informations" Width="113" FontWeight="Bold" FontFamily="Arial" Click="MenuItem_Informations_Click" />
+            <MenuItem Header="Mon Planning" Width="113" FontWeight="Bold" FontFamily="Arial"/>
+            <MenuItem Header="Contact" Width="99" FontWeight="Bold" FontFamily="Arial" Click="MenuItem_Contact_Click"/>
+            <MenuItem Header="Chat" Width="92" FontWeight="Bold" FontFamily="Arial" Click="MenuItem_Chat_Click"/>
+        </Menu>
+        <Button x:Name="btnDesinscription" Content="Désinscription" Grid.Column="2" HorizontalAlignment="Left" Margin="675,412,0,0" VerticalAlignment="Top" Width="86" Background="#BDD387" Height="28" Click="btnDesinscription_Click"/>
+        <Image x:Name="image" Grid.Column="2" HorizontalAlignment="Left" Height="44" Margin="295,143,0,0" VerticalAlignment="Top" Width="60" Source="/HappyCenter;component/Ressources/cuisine.png"/>
+        <Image x:Name="image1" Grid.Column="2" HorizontalAlignment="Left" Height="44" Margin="661,143,0,0" VerticalAlignment="Top" Width="47" Source="/HappyCenter;component/Ressources/jeuxSociete.png"/>
+        <Image x:Name="image2" Grid.Column="2" HorizontalAlignment="Left" Height="44" Margin="393,194,0,0" VerticalAlignment="Top" Width="45" Source="/HappyCenter;component/Ressources/arts.png"/>
+    </Grid>
+</Window>

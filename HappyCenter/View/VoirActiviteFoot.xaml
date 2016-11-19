@@ -9,17 +9,17 @@
     <Grid Background="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}">
         <Label x:Name="label" Content="BIENVENUE CHEZ HAPPY CENTER" HorizontalAlignment="Left" Margin="264,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.078,-2.707" FontFamily="Segoe Print" FontSize="16"/>
         <Menu x:Name="menu" HorizontalAlignment="Left" Height="23" Margin="139,61,0,0" VerticalAlignment="Top" Width="532" Background="#FAD1A9">
-            <MenuItem Header="_Accueil" Width="96" FontWeight="Bold" FontFamily="Arial" Height="23"/>
-            <MenuItem Header="_Informations" Width="127"  FontWeight="Bold" FontFamily="Arial"/>
-            <MenuItem Header="_Mon Planning" Width="114" FontWeight="Bold" FontFamily="Arial"/>
-            <MenuItem Header="_Contact" Width="90" FontWeight="Bold" FontFamily="Arial"/>
-            <MenuItem Header="_Chat" Width="105" FontWeight="Bold" FontFamily="Arial" />
+            <MenuItem Header="_Accueil" Width="96" FontWeight="Bold" FontFamily="Arial" Height="23" Click=" MenuItem_Accueil_Click"/>
+            <MenuItem Header="_Informations" Width="127"  FontWeight="Bold" FontFamily="Arial" Click="MenuItem_Informations_Click"/>
+            <MenuItem Header="_Mon Planning" Width="114" FontWeight="Bold" FontFamily="Arial" Click="MenuItem_Mon_Planning_Click"/>
+            <MenuItem Header="_Contact" Width="90" FontWeight="Bold" FontFamily="Arial" Click="MenuItem_Contact_Click"/>
+            <MenuItem Header="_Chat" Width="105" FontWeight="Bold" FontFamily="Arial" Click=" MenuItem_Chat_Click"/>
         </Menu>
 
         <Rectangle HorizontalAlignment="Left" Height="276" Margin="100,106,0,0" VerticalAlignment="Top" Width="615" Fill="White"/>
         <Image x:Name="photo_activite" HorizontalAlignment="Left" Height="103" Margin="171,144,0,0" VerticalAlignment="Top" Width="112" Source="/HappyCenter;component/Ressources/foot.PNG"/>
         <TextBlock x:Name="description" HorizontalAlignment="Left" Margin="339,209,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="102" Width="310"><Run Foreground="#FFA31515" FontSize="20" FontFamily="Arial" Text="Participez à des matchs amicaux "/><Run Foreground="#FFA31515" FontSize="20" FontFamily="Arial" Text="a"/><Run Foreground="#FFA31515" FontSize="20" FontFamily="Arial" Text="vec "/><Run Foreground="#FFA31515" FontSize="20" FontFamily="Arial"/><LineBreak/><Run Foreground="#FFA31515" FontSize="20" FontFamily="Arial" Text="           "/><Run Foreground="#FFA31515" FontSize="20" FontFamily="Arial" Text="       "/><Run Foreground="#FFA31515" FontSize="20" FontFamily="Arial" Text="Matthieu D"/></TextBlock>
-        <Label x:Name="etat"  HorizontalAlignment="Left" Margin="429,316,0,0" VerticalAlignment="Top" Height="30" Width="242"/>
+        <Label x:Name="etat"  HorizontalAlignment="Left" Margin="429,316,0,0" VerticalAlignment="Top" Height="30" Width="242" FontFamily="Arial" FontSize="13"/>
         <Label x:Name="effectif_actuel"  HorizontalAlignment="Left" Margin="197,316,0,0" VerticalAlignment="Top" Width="115" Height="30"/>
 
 

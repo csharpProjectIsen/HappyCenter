@@ -95,11 +95,40 @@ namespace HappyCenter.View
             this.Close();
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void MenuItem_Informations_Click(object sender, RoutedEventArgs e)
         {
+            VoirInformations informations = new VoirInformations();
+            informations.Show();
+            this.Close();
 
         }
 
-  
+        private void MenuItem_Mon_Planning_Click(object sender, RoutedEventArgs e)
+        {
+            VoirPlannification monPlanning = new VoirPlannification();
+            monPlanning.Show();
+            this.Close();
+        }
+
+        private void MenuItem_Contact_Click(object sender, RoutedEventArgs e)
+        {
+            VoirContact contact = new VoirContact();
+            contact.Show();
+            this.Close();
+        }
+
+        private void MenuItem_Chat_Click(object sender, RoutedEventArgs e)
+        {
+            VoirChat chat = new VoirChat();
+            chat.Show();
+            this.Close();
+        }
+
+        private void button_Accueil_Inscrire_Click(object sender, RoutedEventArgs e)
+        {
+            VoirInscription inscription = new VoirInscription();
+            inscription.Show();
+            this.Close();
+        }
     }
 }
