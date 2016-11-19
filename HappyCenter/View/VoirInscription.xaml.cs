@@ -24,6 +24,7 @@ namespace HappyCenter.View
             InitializeComponent();
         }
 
+        //Onglet Accueil de la barre Menu
         private void MenuItem_Accueil_Click(object sender, RoutedEventArgs e)
         {
             VoirAccueil accueil = new VoirAccueil();
@@ -31,6 +32,7 @@ namespace HappyCenter.View
             this.Close();
         }
 
+        //Onglet Informations de la barre Menu
         private void MenuItem_Informations_Click(object sender, RoutedEventArgs e)
         {
             VoirInformations informations = new VoirInformations();
@@ -38,6 +40,7 @@ namespace HappyCenter.View
             this.Close();
         }
 
+        //Onglet Mon Planning de la barre Menu
         private void MenuItem_Mon_Planning_Click(object sender, RoutedEventArgs e)
         {
             VoirPlannification monPlanning = new VoirPlannification();
@@ -45,6 +48,7 @@ namespace HappyCenter.View
             this.Close();
         }
 
+        //Onglet Contact de la barre Menu
         private void MenuItem_Contact_Click(object sender, RoutedEventArgs e)
         {
             VoirContact contact = new VoirContact();
@@ -52,6 +56,7 @@ namespace HappyCenter.View
             this.Close();
         }
 
+        //Onglet Chat de la barre Menu
         private void MenuItem_Chat_Click(object sender, RoutedEventArgs e)
         {
             VoirChat chat = new VoirChat();
@@ -59,6 +64,7 @@ namespace HappyCenter.View
             this.Close();
         }
 
+        //Bouton Valider
         private void btnValider_Click(object sender, RoutedEventArgs e)
         {
             if (tboxName.Text == "" || tboxPrenom.Text == "" || tboxAge.Text == "" || cboxNomActivite.Text == "" || cboxJourInscription.Text == "" || cboxHoraires.Text == "")
@@ -72,6 +78,7 @@ namespace HappyCenter.View
             }
         }
 
+        //Bouton Modifier
         private void btnModifier_Click(object sender, RoutedEventArgs e)
         {
 

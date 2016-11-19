@@ -19,7 +19,8 @@ namespace HappyCenter.View
     /// Interaction logic for VoirPlannification.xaml
     /// </summary>
     public partial class VoirPlannification : Window
-    {
+    {   
+        // Objet constructeur du planning
         public class DataObject
         {
             public string A { get; set; }
@@ -34,6 +35,8 @@ namespace HappyCenter.View
         public VoirPlannification()
         {
             InitializeComponent();
+
+            //Planning Utilisateur
             var list = new ObservableCollection<DataObject>();
             list.Add(new DataObject() { A = "", B = "MARDI", C = "MERCREDI", D = "JEUDI", E = "VENDREDI", F = "SAMEDI" });
             list.Add(new DataObject() { A = "\n8h - 10 h", B = "\n\n", C = "\n\n", D = "\n\n", E = "\n\n", F = "\n\n" });
@@ -44,6 +47,7 @@ namespace HappyCenter.View
 
         }
 
+        //Onglet Accueil de la barre Menu
         private void MenuItem_Accueil_Click(object sender, RoutedEventArgs e)
         {
             VoirAccueil accueil = new VoirAccueil();
@@ -51,6 +55,7 @@ namespace HappyCenter.View
             this.Close(); 
          }
 
+        //Onglet Chat de la barre Menu
         private void MenuItem_Chat_Click(object sender, RoutedEventArgs e)
         {
             VoirChat chat = new VoirChat();
@@ -63,6 +68,7 @@ namespace HappyCenter.View
 
         }
 
+        //Onglet Informations de la barre Menu
         private void MenuItem_Informations_Click(object sender, RoutedEventArgs e)
         {
             VoirInformations informations = new VoirInformations();
@@ -70,6 +76,7 @@ namespace HappyCenter.View
             this.Close();
         }
 
+        //Onglet Contact de la barre Menu
         private void MenuItem_Contact_Click(object sender, RoutedEventArgs e)
         {
             VoirContact contact = new VoirContact();
@@ -77,6 +84,7 @@ namespace HappyCenter.View
             this.Close();
         }
 
+        //Bouton Désinscription
         private void btnDesinscription_Click(object sender, RoutedEventArgs e)
         {
             VoirDesinscription desinscription = new VoirDesinscription();

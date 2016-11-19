@@ -20,6 +20,7 @@ namespace HappyCenter.View
     /// </summary>
     public partial class VoirAccueil : Window
     {
+        // Objet constructeur du planning
         public class DataObject
         {
             public string A { get; set; }
@@ -41,12 +42,9 @@ namespace HappyCenter.View
             list.Add(new DataObject() { A = "\n" + "14h - 16 h", B = "Jeu de\n"+"société\n"+"Hélène F", C = "Fitness\n"+"Laura A", D = " ", E = "Arts\n"+"Claude M", F = " " });
             list.Add(new DataObject() { A = "\n" + "16h - 18 h", B = " ", C = " ", D = "Foot\n\n"+"Mathieu D", E = " ", F = " " });
             this.planning.ItemsSource = list;
-
-            //code images activités
-            
-
         }
 
+        //Bouton Image Atelier Cuisine
         private void btn_cuisine_Click(object sender, RoutedEventArgs e)
         {
             VoirActiviteCuisine cuisine = new VoirActiviteCuisine();
@@ -55,6 +53,7 @@ namespace HappyCenter.View
             this.Close();
         }
 
+        //Bouton Image Atelier Arts
         private void btn_arts_Click(object sender, RoutedEventArgs e)
         {
             VoirActiviteArts arts = new VoirActiviteArts();
@@ -63,6 +62,7 @@ namespace HappyCenter.View
             this.Close();
         }
 
+        //Bouton Image Atelier Foot
         private void btn_foot_Click(object sender, RoutedEventArgs e)
         {
             VoirActiviteFoot foot = new VoirActiviteFoot();
@@ -71,6 +71,7 @@ namespace HappyCenter.View
             this.Close();
         }
 
+        //Bouton Image Atelier Jeux de société
         private void btn_jeuxsociete_Click(object sender, RoutedEventArgs e)
         {
             VoirActiviteJeuxSociete jeuxSo = new VoirActiviteJeuxSociete();
@@ -79,6 +80,7 @@ namespace HappyCenter.View
             this.Close();
         }
 
+        //Bouton Image Atelier Futness
         private void btn_fitness_Click(object sender, RoutedEventArgs e)
         {
             VoirActiviteFitness fitness = new VoirActiviteFitness();
@@ -87,6 +89,7 @@ namespace HappyCenter.View
             this.Close();
         }
 
+        //Bouton Image Atelier Espagnole
         private void btn_espagnol_Click(object sender, RoutedEventArgs e)
         {
             VoirActiviteEspagnol espagnol = new VoirActiviteEspagnol();
@@ -95,6 +98,7 @@ namespace HappyCenter.View
             this.Close();
         }
 
+        //Onglet Informations de la barre Menu
         private void MenuItem_Informations_Click(object sender, RoutedEventArgs e)
         {
             VoirInformations informations = new VoirInformations();
@@ -103,6 +107,7 @@ namespace HappyCenter.View
 
         }
 
+        //Onglet Mon Planning de la barre Menu
         private void MenuItem_Mon_Planning_Click(object sender, RoutedEventArgs e)
         {
             VoirPlannification monPlanning = new VoirPlannification();
@@ -110,6 +115,7 @@ namespace HappyCenter.View
             this.Close();
         }
 
+        //Onglet Contact de la barre Menu
         private void MenuItem_Contact_Click(object sender, RoutedEventArgs e)
         {
             VoirContact contact = new VoirContact();
@@ -117,6 +123,7 @@ namespace HappyCenter.View
             this.Close();
         }
 
+        //Onglet Chat de la barre Menu
         private void MenuItem_Chat_Click(object sender, RoutedEventArgs e)
         {
             VoirChat chat = new VoirChat();
@@ -124,6 +131,7 @@ namespace HappyCenter.View
             this.Close();
         }
 
+        //Bouton Inscription aux activités de la page d'accueil
         private void button_Accueil_Inscrire_Click(object sender, RoutedEventArgs e)
         {
             VoirInscription inscription = new VoirInscription();

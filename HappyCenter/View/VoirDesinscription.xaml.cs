@@ -24,6 +24,7 @@ namespace HappyCenter.View
             InitializeComponent();
         }
 
+        //Onglet Accueil de la barre Menu
         private void MenuItem_Accueil_Click(object sender, RoutedEventArgs e)
         {
             VoirAccueil accueil = new VoirAccueil();
@@ -31,6 +32,7 @@ namespace HappyCenter.View
             this.Close();
         }
 
+        //Onglet Informations de la barre Menu
         private void MenuItem_Informations_Click(object sender, RoutedEventArgs e)
         {
             VoirInformations informations = new VoirInformations();
@@ -38,6 +40,7 @@ namespace HappyCenter.View
             this.Close();
         }
 
+        //Onglet Mon Planning de la barre Menu
         private void MenuItem_Mon_Planning_Click(object sender, RoutedEventArgs e)
         {
             VoirPlannification monPlanning = new VoirPlannification();
@@ -45,6 +48,7 @@ namespace HappyCenter.View
             this.Close();
         }
 
+        //Onglet Contact de la barre Menu
         private void MenuItem_Contact_Click(object sender, RoutedEventArgs e)
         {
             VoirContact contact = new VoirContact();
@@ -52,6 +56,7 @@ namespace HappyCenter.View
             this.Close();
         }
 
+        //Onglet Chat de la barre Menu
         private void MenuItem_Chat_Click(object sender, RoutedEventArgs e)
         {
             VoirChat chat = new VoirChat();
@@ -59,6 +64,7 @@ namespace HappyCenter.View
             this.Close();
         }
 
+        //Bouton désinscription à l'Atelier Arts
         private void btnDesinscriptionArts_Click(object sender, RoutedEventArgs e)
         {
             if (cboxDesinscriptionArts.Text =="")
@@ -71,6 +77,7 @@ namespace HappyCenter.View
             }
         }
 
+        //Bouton désinscription à l'Atelier Cuisine
         private void btnDesinscriptionCuisine_Click(object sender, RoutedEventArgs e)
         {
             if (cboxDesinscriptionCuisine.Text == "")
@@ -83,6 +90,7 @@ namespace HappyCenter.View
             }
         }
 
+        //Bouton désinscription à l'Atelier Espagnole
         private void btnDesinscriptionArtsEspagnole_Click(object sender, RoutedEventArgs e)
         {
             if (cboxDesinscriptionEspagnole.Text == "")
@@ -95,6 +103,7 @@ namespace HappyCenter.View
             }
         }
 
+        //Bouton désinscription à l'Atelier Football
         private void btnDesinscriptionFootball_Click(object sender, RoutedEventArgs e)
         {
             if (cboxDesinscriptionFootball.Text == "")
@@ -107,6 +116,7 @@ namespace HappyCenter.View
             }
         }
 
+        //Bouton désinscription à l'AtelierJeux de Société
         private void btnDesinscriptionJeuxDeSociete_Click(object sender, RoutedEventArgs e)
         {
             if (cboxDesinscriptionJeuxDeSociete.Text == "") 
@@ -119,6 +129,7 @@ namespace HappyCenter.View
             }
         }
 
+        //Bouton désinscription à l'Atelier Fitness
         private void btnDesinscriptionFitness_Click(object sender, RoutedEventArgs e)
         {
             if (cboxDesinscriptionFitness.Text == "") 

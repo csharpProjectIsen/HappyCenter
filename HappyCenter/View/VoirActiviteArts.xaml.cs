@@ -32,6 +32,8 @@ namespace HappyCenter.View
             InitializeComponent();
         }
 
+
+        //Méthode pour calculer l'état de l'activité
         public string CalculEtat()
         {
             DateTime h = DateTime.Now;
@@ -54,6 +56,7 @@ namespace HappyCenter.View
             return letatfin;
         }
 
+        //Onglet Accueil de la barre Menu
         private void MenuItem_Accueil_Click(object sender, RoutedEventArgs e)
         {
             VoirAccueil accueil = new VoirAccueil();
@@ -61,6 +64,7 @@ namespace HappyCenter.View
             this.Close();
         }
 
+        //Onglet Informations de la barre Menu
         private void MenuItem_Informations_Click(object sender, RoutedEventArgs e)
         {
             VoirInformations informations = new VoirInformations();
@@ -68,6 +72,7 @@ namespace HappyCenter.View
             this.Close();
         }
 
+        //Onglet Mon Planning de la barre Menu
         private void MenuItem_Mon_Planning_Click(object sender, RoutedEventArgs e)
         {
             VoirPlannification monPlanning = new VoirPlannification();
@@ -75,6 +80,7 @@ namespace HappyCenter.View
             this.Close();
         }
 
+        //Onglet Contact de la barre Menu
         private void MenuItem_Contact_Click(object sender, RoutedEventArgs e)
         {
             VoirContact contact = new VoirContact();
@@ -82,6 +88,7 @@ namespace HappyCenter.View
             this.Close();
         }
 
+        //Onglet Chat de la barre Menu
         private void MenuItem_Chat_Click(object sender, RoutedEventArgs e)
         {
             VoirChat chat = new VoirChat();

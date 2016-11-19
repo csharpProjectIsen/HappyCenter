@@ -44,6 +44,7 @@ namespace HappyCenter.View
             textRemotePort = 81;
         }
 
+        //Méthode d'obtention de l'adresse IP local
         private string GetLocalIP(){
 
             IPHostEntry host;
@@ -57,7 +58,7 @@ namespace HappyCenter.View
             return "127.0.0.1";   
         }
 
-        //onglet Accueil
+        //Onglet Accueil de la barre Menu
         private void MenuItem_Accueil_Click(object sender, RoutedEventArgs e)
         {
             VoirAccueil accueil = new VoirAccueil();
@@ -65,7 +66,7 @@ namespace HappyCenter.View
             this.Close();
         }
 
-        //onglet Informations
+        //Onglet Informations de la barre Menu
         private void MenuItem_Informations_Click(object sender, RoutedEventArgs e)
         {
             VoirInformations informations = new VoirInformations();
@@ -73,7 +74,7 @@ namespace HappyCenter.View
             this.Close();
         }
 
-        //onglet Mon Planning
+        //Onglet Mon Planning de la barre Menu
         private void MenuItem_Mon_Planning_Click(object sender, RoutedEventArgs e)
         {
             VoirPlannification monPlanning = new VoirPlannification();
@@ -81,6 +82,7 @@ namespace HappyCenter.View
             this.Close();
         }
 
+        //Bouton connexion du Chat
         private void btnConnexion_Click(object sender, RoutedEventArgs e)
         {
             //liaison du socket
@@ -98,7 +100,7 @@ namespace HappyCenter.View
             MessageBox.Show("Vous êtes maintenant connecté(e), vous pouvez discuter avec l'admin !");
 
         }
-
+        // Méthode du MessageCallBack
         private void MessageCallBack(IAsyncResult aResult)
         {
             try
@@ -122,6 +124,7 @@ namespace HappyCenter.View
             }
         }
 
+        //Boyton envoyer du Chat
         private void button_Envoyer_Click(object sender, RoutedEventArgs e)
         {
             //Convertir le message string en byte[]
@@ -137,7 +140,7 @@ namespace HappyCenter.View
 
         }
 
-        //ongletContact
+        ////Onglet Contact de la barre Menu
         private void MenuItem_Contact_Click(object sender, RoutedEventArgs e)
         {
             VoirContact contact = new VoirContact();
